@@ -73,11 +73,11 @@
                                         Estetik Cerrahi
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item active" href="rinoplasti.html">Rinoplasti</a></li>
-                                        <li><a class="dropdown-item" href="meme-estetigi.html">Meme Estetiği</a></li>
-                                        <li><a class="dropdown-item" href="yuz-estetigi.html">Yüz Estetiği</a></li>
-                                        <li><a class="dropdown-item" href="vucut-estetigi.html">Vücut Estetiği</a></li>
-                                        <li><a class="dropdown-item" href="jinekomasti.html">Jinekomasti</a></li>
+                                        <li><a class="dropdown-item active" href="pages/estetik-cerrahi/rinoplasti.html">Rinoplasti</a></li>
+                                        <li><a class="dropdown-item" href="pages/estetik-cerrahi/meme-estetigi.html">Meme Estetiği</a></li>
+                                        <li><a class="dropdown-item" href="pages/estetik-cerrahi/yuz-estetigi.html">Yüz Estetiği</a></li>
+                                        <li><a class="dropdown-item" href="pages/estetik-cerrahi/vucut-estetigi.html">Vücut Estetiği</a></li>
+                                        <li><a class="dropdown-item" href="pages/estetik-cerrahi/jinekomasti.html"">Jinekomasti</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
@@ -524,4 +524,97 @@
     <!-- Custom JS -->
     <script src="../../js/main.js"></script>
 </body>
+<style>
+.process-number {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #6c63ff 0%, #9c88ff 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 0 auto 20px;
+    box-shadow: 0 8px 25px rgba(108, 99, 255, 0.3);
+}
+
+.feature-box {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Modern Accordion Styles */
+.accordion-item {
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+.accordion-button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 20px 25px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+    color: white;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 0.25rem rgba(102, 126, 234, 0.25);
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-body {
+    padding: 25px;
+    background: white;
+    color: #666;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+/* Process Cards Enhanced */
+.card.border-0.shadow-sm {
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.card.border-0.shadow-sm:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(108, 99, 255, 0.15) !important;
+    border-color: rgba(108, 99, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .service-hero {
+        min-height: 50vh;
+    }
+
+    .process-number {
+        width: 70px;
+        height: 70px;
+        font-size: 1.5rem;
+    }
+}
+</style>
 </html>
