@@ -50,12 +50,8 @@
         <div class="container">
             <div class="row w-100 align-items-center">
                 <div class="col-lg-3">
-                    <a href="../../index.html" class="navbar-brand">
-                        <div class="logo-signature">Mustafa Öksüz</div>
-                        <div class="doctor-info">
-                            <h4>Op. Dr. Mustafa ÖKSÜZ</h4>
-                            <p>Estetik ve Plastik Cerrahi Uzmanı</p>
-                        </div>
+                    <a href="../../index.html" class="navbar-brand d-flex align-items-center justify-content-center justify-content-lg-start">
+                        <img src="../../assets/images/logo.png" alt="Op. Dr. Mustafa Öksüz - Estetik ve Plastik Cerrahi Uzmanı" class="logo-img">
                     </a>
                 </div>
                 <div class="col-lg-7">
@@ -73,11 +69,11 @@
                                         Estetik Cerrahi
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item active" href="pages/estetik-cerrahi/rinoplasti.html">Rinoplasti</a></li>
-                                        <li><a class="dropdown-item" href="pages/estetik-cerrahi/meme-estetigi.html">Meme Estetiği</a></li>
-                                        <li><a class="dropdown-item" href="pages/estetik-cerrahi/yuz-estetigi.html">Yüz Estetiği</a></li>
-                                        <li><a class="dropdown-item" href="pages/estetik-cerrahi/vucut-estetigi.html">Vücut Estetiği</a></li>
-                                        <li><a class="dropdown-item" href="pages/estetik-cerrahi/jinekomasti.html"">Jinekomasti</a></li>
+                                        <li><a class="dropdown-item active" href="rinoplasti.html">Rinoplasti</a></li>
+                                        <li><a class="dropdown-item" href="meme-estetigi.html">Meme Estetiği</a></li>
+                                        <li><a class="dropdown-item" href="yuz-estetigi.html">Yüz Estetiği</a></li>
+                                        <li><a class="dropdown-item" href="vucut-estetigi.html">Vücut Estetiği</a></li>
+                                        <li><a class="dropdown-item" href="jinekomasti.html">Jinekomasti</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
@@ -110,7 +106,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="service-hero d-flex align-items-center" style="background: linear-gradient(135deg, rgba(44, 90, 160, 0.9), rgba(102, 126, 234, 0.9)), url('../../assets/images/rinoplasti-hero.jpg') center/cover; min-height: 60vh; margin-top: 120px;">
+    <section class="service-hero d-flex align-items-center" style="background: linear-gradient(270deg, #2c3e50 0%, #34495e 30%, #5a6c7d 70%, #7f8c9a 100%), url('../../assets/images/rinoplasti-hero.jpg') center/cover; min-height: 60vh; margin-top: 0; padding-top: 140px;">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center text-white">
@@ -458,7 +454,7 @@
     </section>
 
     <!-- Consultation CTA -->
-    <section id="consultation" class="py-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+    <section id="consultation" class="py-5" style="background: linear-gradient(270deg, #5a6c7d 0%, #09B7A0 70%, #7f8c9a 100%);">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center text-white">
@@ -528,7 +524,7 @@
 .process-number {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #6c63ff 0%, #9c88ff 100%);
+    background: linear-gradient(270deg, #2c3e50 0%, #09B7A0 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -537,7 +533,7 @@
     font-size: 1.6rem;
     font-weight: bold;
     margin: 0 auto 20px;
-    box-shadow: 0 8px 25px rgba(108, 99, 255, 0.3);
+    box-shadow: 0 8px 25px rgba(44, 62, 80, 0.3); /* Gölge de güncellensin */
 }
 
 .feature-box {
@@ -555,7 +551,7 @@
 }
 
 .accordion-button {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(270deg, #2c3e50 0%, #09B7A0 100%);
     color: white;
     border: none;
     padding: 20px 25px;
@@ -565,15 +561,23 @@
     box-shadow: none;
 }
 
+
 .accordion-button:not(.collapsed) {
-    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+    background: linear-gradient(270deg, #2c3e50 0%, #09B7A0 100%);
     color: white;
     box-shadow: none;
 }
 
 .accordion-button:focus {
     border-color: transparent;
-    box-shadow: 0 0 0 0.25rem rgba(102, 126, 234, 0.25);
+    box-shadow: 0 0 0 0.25rem rgba(44, 62, 80, 0.25); /* Focus gölgesi */
+}
+
+/* 3. Card Hover Effect */
+.card.border-0.shadow-sm:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(44, 62, 80, 0.15) !important; /* Hover gölgesi */
+    border-color: rgba(44, 62, 80, 0.2); /* Hover border */
 }
 
 .accordion-button::after {
@@ -595,11 +599,6 @@
     border: 2px solid transparent;
 }
 
-.card.border-0.shadow-sm:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(108, 99, 255, 0.15) !important;
-    border-color: rgba(108, 99, 255, 0.2);
-}
 
 @media (max-width: 768px) {
     .hero-content h1 {

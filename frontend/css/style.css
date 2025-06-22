@@ -435,14 +435,16 @@ section {
 }
 
 .service-icon {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(270deg, #2c3e50 0%, #09B7A0 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(44, 62, 80, 0.2);
 }
 
 .service-icon i {
@@ -533,4 +535,50 @@ section {
         margin-left: 0;
         margin-top: 10px;
     }
+}
+
+/* Logo Styles */
+.logo-img {
+    height: 65px;
+    width: auto;
+    object-fit: contain;
+    max-width: 350px;
+}
+
+.navbar-brand {
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+.navbar-brand:hover {
+    text-decoration: none;
+}
+
+/* Responsive Logo */
+@media (max-width: 768px) {
+    .logo-img {
+        height: 55px;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-img {
+        height: 45px;
+        max-width: 250px;
+    }
+}
+
+.text-primary {
+    color: #09B7A0 !important; /* Koyu lacivert */
+}
+
+/* Custom Gradient Theme */
+.card-header.bg-primary {
+    background: linear-gradient(270deg, #2c3e50 0%, #09B7A0 100%) !important;
+}
+
+button[type="submit"] {
+    background: linear-gradient(270deg, #2c3e50 0%, #09B7A0 100%) !important;
+    color: white !important;
 }
