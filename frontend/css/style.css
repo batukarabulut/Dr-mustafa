@@ -1061,3 +1061,17 @@ button[type="submit"] {
         margin-bottom: 20px;
     }
 }
+
+/* Navbar dropdown active items */
+.navbar .dropdown-menu .dropdown-item.active,
+.navbar .dropdown-menu .dropdown-item:active {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%) !important;
+    color: white !important;
+    border: none !important;
+}
+
+.navbar .dropdown-menu .dropdown-item.active:hover,
+.navbar .dropdown-menu .dropdown-item.active:focus {
+    background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%) !important;
+    color: white !important;
+}

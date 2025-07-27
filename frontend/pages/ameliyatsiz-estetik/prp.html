@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRP - Platelet Rich Plasma Tedavisi | Op. Dr. Mustafa Öksüz</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <!-- Top Navbar -->
+    <div class="top-navbar">
+        <div class="container">
+            <div class="top-contact">
+                <span class="me-4">
+                    <i class="fas fa-phone"></i>+90 540 740 40 77
+                </span>
+                <span class="me-4">
+                    <i class="fas fa-map-marker-alt"></i>İletişim Bilgileri
+                </span>
+            </div>
+            <div class="d-flex align-items-center">
+                <!-- Language Flags -->
+                <div class="language-flags">
+                    <img src="https://flagcdn.com/w20/gb.png" alt="EN" class="flag-btn" title="English">
+                    <img src="https://flagcdn.com/w20/de.png" alt="DE" class="flag-btn" title="Deutsch">
+                    <img src="https://flagcdn.com/w20/ru.png" alt="RU" class="flag-btn" title="Русский">
+                </div>
+                
+                <!-- Social Icons -->
+                <div class="social-icons">
+                    <a href="https://wa.me/905407404077" class="social-icon whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/doctor.mustafaoksuz/" class="social-icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="main-navbar" id="mainNavbar">
+        <div class="container">
+            <div class="row w-100 align-items-center">
+                <div class="col-lg-3">
+                    <a href="../../index.html" class="navbar-brand d-flex align-items-center justify-content-center justify-content-lg-start">
+                        <img src="../../assets/images/logo.png" alt="Op. Dr. Mustafa Öksüz - Estetik ve Plastik Cerrahi Uzmanı" class="logo-img">
+                    </a>
+                </div>
+                <div class="col-lg-7">
+                    <nav class="navbar navbar-expand-lg">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../about.html">Hakkımda</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                                        Estetik Cerrahi
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="../estetik-cerrahi/rinoplasti.html">Rinoplasti</a></li>
+                                        <li><a class="dropdown-item" href="../estetik-cerrahi/meme-estetigi.html">Meme Estetiği</a></li>
+                                        <li><a class="dropdown-item" href="../estetik-cerrahi/yuz-estetigi.html">Yüz Estetiği</a></li>
+                                        <li><a class="dropdown-item" href="../estetik-cerrahi/vucut-estetigi.html">Vücut Estetiği</a></li>
+                                        <li><a class="dropdown-item" href="../estetik-cerrahi/jinekomasti.html">Jinekomasti</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle active" href="#" id="nonsurgicalDropdown" role="button" data-bs-toggle="dropdown">
+                                        Ameliyatsız Estetik
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="botoks.html">Botoks</a></li>
+                                        <li><a class="dropdown-item" href="dolgu.html">Dolgu</a></li>
+                                        <li><a class="dropdown-item" href="fransiz-askisi.html">Fransız Askısı</a></li>
+                                        <li><a class="dropdown-item" href="mezoterapi.html">Mezoterapi</a></li>
+                                        <li><a class="dropdown-item active" href="prp.html">PRP</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../media.html">Medya</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../contact.html">İletişim</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-2 text-end">
+                    <a href="../appointment.html" class="randevu-btn">RANDEVU</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="service-hero d-flex align-items-center" style="background: linear-gradient(270deg, #2c3e50 0%, #34495e 30%, #5a6c7d 70%, #7f8c9a 100%), url('../../assets/images/prp-hero.jpg') center/cover; min-height: 60vh; margin-top: 0; padding-top: 140px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center text-white">
+                    <!-- Breadcrumb -->
+                    <nav aria-label="breadcrumb" class="mb-4">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="../../index.html" class="text-white-50">Anasayfa</a></li>
+                            <li class="breadcrumb-item"><a href="#" class="text-white-50">Ameliyatsız Estetik</a></li>
+                            <li class="breadcrumb-item active text-white" aria-current="page">PRP</li>
+                        </ol>
+                    </nav>
+                    
+                    <h1 class="display-4 fw-bold mb-3">PRP Tedavisi</h1>
+                    <p class="lead mb-4">Platelet Rich Plasma ile Doğal Gençleşme</p>
+                    <p class="mb-4">Kendi kanınızdan elde edilen trombositlerle cilt yenileme</p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#consultation" class="btn btn-light btn-lg me-3">
+                            <i class="fas fa-calendar-alt me-2"></i>Ücretsiz Konsültasyon
+                        </a>
+                        <a href="#process" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-info-circle me-2"></i>Süreç Hakkında
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Info Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <i class="fas fa-clock text-primary mb-3" style="font-size: 2rem;"></i>
+                            <h5>Uygulama Süresi</h5>
+                            <p class="text-muted mb-0">45-60 Dakika</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <i class="fas fa-home text-primary mb-3" style="font-size: 2rem;"></i>
+                            <h5>Hastanede Kalış</h5>
+                            <p class="text-muted mb-0">Yok</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <i class="fas fa-syringe text-primary mb-3" style="font-size: 2rem;"></i>
+                            <h5>Anestezi</h5>
+                            <p class="text-muted mb-0">Topikal Krem</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <i class="fas fa-sync-alt text-primary mb-3" style="font-size: 2rem;"></i>
+                            <h5>Seans Sayısı</h5>
+                            <p class="text-muted mb-0">3-4 Seans</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About PRP -->
+    <section id="about-prp" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <h2 class="mb-4">PRP Tedavisi Nedir?</h2>
+                    <p class="lead mb-4">
+                        PRP (Platelet Rich Plasma), kişinin kendi kanından elde edilen trombositce zengin plazmanın cilt altına enjekte edilmesi ile yapılan doğal gençleşme tedavisidir.
+                    </p>
+                    <p class="mb-4">
+                        Bu tedavide kişinin kendi kanı alınır, özel bir süreçte işlenerek trombositler yoğunlaştırılır. 
+                        Elde edilen PRP, büyüme faktörleri bakımından zengin olup cilt yenilenmesini hızlandırır.
+                    </p>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5 class="text-primary mb-3">Uygulama Alanları:</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Yüz gençleştirme</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Boyun ve dekolte</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>El sırtı</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Saç dökülmesi tedavisi</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="text-primary mb-3">PRP'nin Faydaları:</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Kolajen üretimi artışı</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Cilt elastikiyeti iyileşmesi</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>İnce çizgilerin azalması</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Cilt tonunun düzelmesi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="../../assets/images/prp-process.jpg" alt="PRP Uygulama Süreci" class="img-fluid rounded-3 shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">PRP Uygulama Süreci</h2>
+                    <p class="text-muted">Kan alımından cilt uygulamasına kadar</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="process-number">1</div>
+                            <h5 class="mt-3 mb-3">Detaylı Konsültasyon</h5>
+                            <p class="text-muted">
+                                Cilt analizi yapılır ve PRP tedavisine uygunluk değerlendirilir. 
+                                Tedavi beklentileri görüşülür.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="process-number">2</div>
+                            <h5 class="mt-3 mb-3">Kan Alımı</h5>
+                            <p class="text-muted">
+                                Hastadan 8-20 ml kan alınır. Bu işlem 
+                                standart kan tahlili gibi basit ve hızlıdır.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="process-number">3</div>
+                            <h5 class="mt-3 mb-3">Santrifüj İşlemi</h5>
+                            <p class="text-muted">
+                                Kan özel santrifüj cihazında işlenerek 
+                                trombositce zengin plazma elde edilir.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="process-number">4</div>
+                            <h5 class="mt-3 mb-3">Cilt Hazırlığı</h5>
+                            <p class="text-muted">
+                                Uygulanacak bölge temizlenir ve topikal 
+                                anestezi kremi uygulanır.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="process-number">5</div>
+                            <h5 class="mt-3 mb-3">PRP Enjeksiyonu</h5>
+                            <p class="text-muted">
+                                Elde edilen PRP ince iğnelerle cilt altına 
+                                enjekte edilir. İşlem 15-20 dakika sürer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="process-number">6</div>
+                            <h5 class="mt-3 mb-3">İyileşme ve Takip</h5>
+                            <p class="text-muted">
+                                3-4 hafta arayla 3-4 seans uygulanır. 
+                                Her seansta cilt kalitesi iyileşir.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <div class="prp-image-container" style="max-width: 500px; margin: 0 auto; border-radius: 15px; overflow: hidden;">
+                        <img src="../../assets/images/prp.png" alt="PRP Tedavisi" class="img-fluid rounded-3 shadow-lg" style="width: 100%; height: 350px; object-fit: cover; object-position: center;">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Neden PRP Tedavisi?</h2>
+                    <p class="lead mb-4">
+                        PRP tedavisi kişinin kendi kanından elde edildiği için en doğal ve güvenli gençleşme yöntemidir. Alerjik reaksiyon riski yoktur.
+                    </p>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="feature-box">
+                                <i class="fas fa-heart text-primary mb-3" style="font-size: 2rem;"></i>
+                                <h5>%100 Doğal</h5>
+                                <p class="text-muted">Kendi kanınızdan elde edilen plazma</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="feature-box">
+                                <i class="fas fa-dna text-primary mb-3" style="font-size: 2rem;"></i>
+                                <h5>Büyüme Faktörleri</h5>
+                                <p class="text-muted">Doğal büyüme faktörleriyle rejenerasyon</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="feature-box">
+                                <i class="fas fa-shield-alt text-primary mb-3" style="font-size: 2rem;"></i>
+                                <h5>Güvenli Tedavi</h5>
+                                <p class="text-muted">Alerjik reaksiyon riski yok</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="feature-box">
+                                <i class="fas fa-leaf text-primary mb-3" style="font-size: 2rem;"></i>
+                                <h5>Uzun Süreli Etki</h5>
+                                <p class="text-muted">Kalıcı cilt kalitesi iyileşmesi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Sık Sorulan Sorular</h2>
+                    <p class="text-muted">PRP tedavisi hakkında merak ettikleriniz</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    PRP tedavisi ağrılı mıdır?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    PRP enjeksiyonu öncesi topikal anestezi uygulanır. İşlem sırasında hafif batma hissi olabilir 
+                                    ancak ağrı minimal düzeydedir. Kan alma işlemi de standart kan tahlili gibidir.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    PRP tedavisi kaç seans gerektirir?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Genellikle 3-4 hafta arayla 3-4 seans uygulanır. Cilt durumuna göre seans sayısı 
+                                    artabilir. Yılda 1-2 kez hatırlatma seansları önerilir.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    PRP güvenli midir?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    PRP kişinin kendi kanından elde edildiği için %100 güvenlidir. Alerjik reaksiyon riski yoktur. 
+                                    Steril koşullarda uygulandığında herhangi bir yan etkisi bulunmaz.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    PRP sonuçları ne zaman görülür?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    İlk seanslardan sonra cilt parlaklığı artar. 2-3 seans sonrası belirgin iyileşme, 
+                                    tüm seanslar tamamlandıktan sonra maksimum etki görülür.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    PRP sonrası dikkat edilmesi gerekenler?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    İşlem sonrası 24 saat güneşten kaçının, makyaj yapmayın ve uyguladığınız bölgeyi ovmayın. 
+                                    Hafif kızarıklık 1-2 gün içinde geçer.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation CTA -->
+    <section id="consultation" class="py-5" style="background: linear-gradient(270deg, #5a6c7d 0%, #09B7A0 70%, #7f8c9a 100%);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center text-white">
+                    <h2 class="mb-4">Ücretsiz Konsültasyon Alın</h2>
+                    <p class="lead mb-4">PRP tedavisi ile ilgili tüm sorularınızı yanıtlayalım</p>
+                    
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="row g-3">
+                                <div class="col-md-4">
+                                    <a href="https://wa.me/905407404077" class="btn btn-success btn-lg w-100">
+                                        <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="tel:+905407404077" class="btn btn-light btn-lg w-100">
+                                        <i class="fas fa-phone me-2"></i>Hemen Ara
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="../contact.html" class="btn btn-outline-light btn-lg w-100">
+                                        <i class="fas fa-calendar-alt me-2"></i>Randevu Al
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <small class="text-white-50">
+                            <i class="fas fa-shield-alt me-2"></i>
+                            Konsültasyonunuz tamamen ücretsiz ve yükümlülük gerektirmez
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Op. Dr. Mustafa Öksüz. Tüm hakları saklıdır.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/doctor.mustafaoksuz/" class="text-white me-3">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/905407404077" class="text-white">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../../js/main.js"></script>
+</body>
+</html>
