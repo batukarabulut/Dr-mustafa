@@ -101,6 +101,20 @@
                                         <li><a class="dropdown-item" href="#prp">PRP</a></li>
                                     </ul>
                                 </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="reviewsDropdown" role="button"
+                                        data-bs-toggle="dropdown">
+                                        Hasta Yorumları
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item"
+                                                href="pages/hasta-yorumlari/google-yorumlari.html">Google Yorumları</a>
+                                        </li>
+                                        <li><a class="dropdown-item"
+                                                href="pages/hasta-yorumlari/trustpilot-yorumlari.html">Trustpilot
+                                                Yorumları</a></li>
+                                    </ul>
+                                </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#media">Medya</a>
                                 </li>
@@ -112,7 +126,7 @@
                     </nav>
                 </div>
                 <div class="col-lg-2 text-end">
-                    <a href="#appointment" class="randevu-btn">RANDEVU</a>
+                    <a href="pages/contact.html#contact-form" class="randevu-btn">RANDEVU</a>
                 </div>
             </div>
         </div>
@@ -413,6 +427,56 @@
         </div>
     </section>
 
+    <!-- Team Section -->
+<section id="team" class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h2 class="section-title">Ekibimiz</h2>
+          <p class="text-muted">Deneyimli hemşire ve asistan ekibimizle yanınızdayız</p>
+        </div>
+      </div>
+  
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="team-card text-center">
+            <img class="team-photo" src="https://ui-avatars.com/api/?name=Ayse+Yilmaz&background=2c3e50&color=fff&size=256" alt="Hemşire Ayşe Yılmaz">
+            <h5 class="mt-3 mb-1">Hemşire Ayşe Yılmaz</h5>
+            <p class="team-role">Klinik Hemşiresi</p>
+            <p class="text-muted small">Ameliyat öncesi hazırlık ve ameliyat sonrası bakım süreçlerinde hastalarımıza eşlik eder.</p>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-6">
+          <div class="team-card text-center">
+            <img class="team-photo" src="https://ui-avatars.com/api/?name=Zeynep+Demir&background=2c3e50&color=fff&size=256" alt="Hemşire Zeynep Demir">
+            <h5 class="mt-3 mb-1">Hemşire Zeynep Demir</h5>
+            <p class="team-role">Klinik Hemşiresi</p>
+            <p class="text-muted small">Tedavi planlaması, yara bakımı ve kontrol randevularında destek sağlar.</p>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-6">
+          <div class="team-card text-center">
+            <img class="team-photo" src="https://ui-avatars.com/api/?name=Mehmet+Kaya&background=2c3e50&color=fff&size=256" alt="Asistan Mehmet Kaya">
+            <h5 class="mt-3 mb-1">Asistan Mehmet Kaya</h5>
+            <p class="team-role">Cerrahi Asistan</p>
+            <p class="text-muted small">Operasyon süreçlerinin koordinasyonu ve hasta bilgilendirmesinden sorumludur.</p>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-6">
+          <div class="team-card text-center">
+            <img class="team-photo" src="https://ui-avatars.com/api/?name=Ebru+Sahin&background=2c3e50&color=fff&size=256" alt="Asistan Ebru Şahin">
+            <h5 class="mt-3 mb-1">Asistan Ebru Şahin</h5>
+            <p class="team-role">Hasta İlişkileri</p>
+            <p class="text-muted small">Randevu, bilgilendirme ve hasta memnuniyeti süreçlerini yönetir.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
     <!-- Contact Section -->
     <section id="contact" class="py-5 bg-light">
         <div class="container">
@@ -535,11 +599,13 @@
                                     </div>
                                 </div>
 
-                                <button type="submit" class="btn btn-primary btn-lg w-100 py-3" style="background: #2c3e50 !important; color: white !important; border: 2px solid #2c3e50 !important;">
+                                <button type="submit" class="btn btn-primary btn-lg w-100 py-3"
+                                    style="background: #2c3e50 !important; color: white !important; border: 2px solid #2c3e50 !important;">
                                     <span class="btn-text" style="color: white !important;">
                                         <i class="fas fa-paper-plane me-2"></i>Mesaj Gönder
                                     </span>
-                                    <span class="btn-spinner spinner-border spinner-border-sm d-none ms-2" role="status" aria-hidden="true"></span>
+                                    <span class="btn-spinner spinner-border spinner-border-sm d-none ms-2" role="status"
+                                        aria-hidden="true"></span>
                                 </button>
                             </form>
                         </div>
@@ -554,6 +620,16 @@
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
         <div class="container">
+            <!-- Klinik Konumu (Footer) -->
+            <div class="footer-map-wrap mb-4">
+                <h5 class="mb-2">Klinik Konumu</h5>
+                <div class="footer-map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d536.7887977012355!2d27.151460828614333!3d38.429611885875076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd8f4d69c4e89%3A0xb25b8452ce40720b!2sOp.%20Dr.%20Mustafa%20%C3%96ks%C3%BCz%20%C4%B0zmir%20Estetik%20ve%20Plastik%20Cerrahi%20Meme%20Esteti%C4%9Fi%20Botox%20Filler%20Burun%20Esteti%C4%9Fi%20Dudak%20Dolgusu!5e0!3m2!1str!2str!4v1750537143887!5m2!1str!2str"
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-6">
                     <p>&copy; 2025 Op. Dr. Mustafa Öksüz. Tüm hakları saklıdır.</p>
