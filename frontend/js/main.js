@@ -1,5 +1,5 @@
 // ===== CONTACT FORM HANDLER =====
-document.getElementById('contactForm').addEventListener('submit', async function(e) {
+document.getElementById('contactForm')?.addEventListener('submit', async function(e) {
     e.preventDefault();
     
     const form = e.target;
@@ -58,5 +58,148 @@ document.getElementById('contactForm').addEventListener('submit', async function
 
 // ===== MOBILE MENU TOGGLE =====
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Website loaded successfully!');
+    // Add reveal classes automatically to common elements across pages
+    const addRevealDefaults = () => {
+        const defaultRevealSelectors = [
+            '.section-title',
+            '.card',
+            '.service-image-card',
+            '.team-card',
+            '.contact-card',
+            '.accordion-item',
+            '.feature-box',
+            '.process-number',
+            '.service-content',
+            '.review-card'
+        ];
+        const defaultRevealUpSelectors = [
+            '.row.text-center > [class*="col-"]',
+            '.row .col-lg-3.mb-4',
+            '.row .col-md-6.mb-4'
+        ];
+
+        defaultRevealSelectors.forEach(sel => {
+            document.querySelectorAll(sel).forEach(el => {
+                if (!el.classList.contains('reveal') &&
+                    !el.classList.contains('reveal-up') &&
+                    !el.classList.contains('reveal-down') &&
+                    !el.classList.contains('reveal-left') &&
+                    !el.classList.contains('reveal-right')) {
+                    el.classList.add('reveal');
+                }
+            });
+        });
+
+        defaultRevealUpSelectors.forEach(sel => {
+            document.querySelectorAll(sel).forEach(el => {
+                if (!el.classList.contains('reveal') &&
+                    !el.classList.contains('reveal-up') &&
+                    !el.classList.contains('reveal-down') &&
+                    !el.classList.contains('reveal-left') &&
+                    !el.classList.contains('reveal-right')) {
+                    el.classList.add('reveal-up');
+                }
+            });
+        });
+    };
+
+    addRevealDefaults();
+
+    // Scroll reveal (IntersectionObserver)
+    const revealElements = document.querySelectorAll('.reveal, .reveal-up, .reveal-down, .reveal-left, .reveal-right');
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('reveal-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { root: null, rootMargin: '0px 0px -10% 0px', threshold: 0.15 });
+
+        revealElements.forEach(el => observer.observe(el));
+    } else {
+        // Fallback: show all
+        revealElements.forEach(el => el.classList.add('reveal-visible'));
+    }
+
+    // Count-up animation for numbers
+    const counters = document.querySelectorAll('.count-up');
+    const runCounter = (el) => {
+        if (el.dataset.started === '1') return;
+        el.dataset.started = '1';
+        const target = parseFloat(el.getAttribute('data-count')) || 0;
+        const duration = parseInt(el.getAttribute('data-duration') || '1200', 10);
+        const decimals = parseInt(el.getAttribute('data-decimals') || '0', 10);
+        const suffix = el.getAttribute('data-suffix') || '';
+        const start = performance.now();
+
+        const step = (now) => {
+            const progress = Math.min((now - start) / duration, 1);
+            const value = (target * progress).toFixed(decimals);
+            el.textContent = value + suffix;
+            if (progress < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+    };
+
+    const isInViewport = (el) => {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top < (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.bottom > 0 &&
+            rect.left < (window.innerWidth || document.documentElement.clientWidth) &&
+            rect.right > 0
+        );
+    };
+
+    // Kick off immediately for any counters already visible
+    counters.forEach((c) => { if (isInViewport(c)) runCounter(c); });
+
+    if ('IntersectionObserver' in window) {
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    runCounter(entry.target);
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        counters.forEach(c => counterObserver.observe(c));
+    } else {
+        // Fallback: listen to scroll and try to start when visible
+        const onScrollCheck = () => {
+            counters.forEach((c) => { if (isInViewport(c)) runCounter(c); });
+        };
+        onScrollCheck();
+        window.addEventListener('scroll', onScrollCheck, { passive: true });
+    }
+
+    // Back to top button
+    const backToTop = document.createElement('button');
+    backToTop.className = 'back-to-top';
+    backToTop.setAttribute('aria-label', 'Yukarı dön');
+    backToTop.innerHTML = '<i class="fas fa-chevron-up"></i>';
+    document.body.appendChild(backToTop);
+
+    const toggleBackToTop = () => {
+        if (window.scrollY > 300) backToTop.classList.add('visible');
+        else backToTop.classList.remove('visible');
+    };
+    window.addEventListener('scroll', toggleBackToTop, { passive: true });
+    toggleBackToTop();
+
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // WhatsApp floating button (left bottom)
+    const wa = document.createElement('a');
+    wa.href = 'https://wa.me/905407404077';
+    wa.target = '_blank';
+    wa.rel = 'noopener';
+    wa.className = 'whatsapp-float';
+    wa.setAttribute('aria-label', 'WhatsApp ile yazın');
+    wa.innerHTML = '<i class="fab fa-whatsapp" style="font-size: 24px;"></i>';
+    document.body.appendChild(wa);
 });
