@@ -58,6 +58,58 @@ document.getElementById('contactForm')?.addEventListener('submit', async functio
 
 // ===== MOBILE MENU TOGGLE =====
 document.addEventListener('DOMContentLoaded', function() {
+    // Collapse navbar when a leaf nav-link is clicked (but NOT dropdown toggles)
+    document.querySelectorAll('.navbar .nav-link').forEach((link) => {
+        link.addEventListener('click', (ev) => {
+            const isDropdownToggle = link.classList.contains('dropdown-toggle') || link.getAttribute('data-bs-toggle') === 'dropdown';
+            if (isDropdownToggle) {
+                // keep navbar open while toggling dropdown
+                ev.preventDefault();
+                ev.stopPropagation();
+                // toggle related menu for mobile
+                if (window.innerWidth < 992) {
+                    const menu = link.nextElementSibling;
+                    if (menu && menu.classList.contains('dropdown-menu')) {
+                        const shown = menu.classList.contains('show');
+                        document.querySelectorAll('.navbar .dropdown-menu.show').forEach(m => m.classList.remove('show'));
+                        if (!shown) menu.classList.add('show');
+                    }
+                }
+                return;
+            }
+            const navbarCollapse = document.querySelector('.navbar .collapse.show');
+            if (navbarCollapse) {
+                const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse) || new bootstrap.Collapse(navbarCollapse, { toggle: false });
+                bsCollapse.hide();
+            }
+        });
+    });
+
+    // Allow dropdowns to toggle properly on mobile via click (do not close parent collapse)
+    document.querySelectorAll('.navbar .dropdown-toggle').forEach((toggle) => {
+        toggle.addEventListener('click', function (e) {
+            if (window.innerWidth < 992) {
+                e.preventDefault();
+                e.stopPropagation();
+                const menu = this.nextElementSibling;
+                if (menu && menu.classList.contains('dropdown-menu')) {
+                    const isShown = menu.classList.contains('show');
+                    document.querySelectorAll('.navbar .dropdown-menu.show').forEach(m => {
+                        if (m !== menu) m.classList.remove('show');
+                    });
+                    if (!isShown) menu.classList.add('show');
+                }
+            }
+        });
+    });
+
+    document.addEventListener('click', function(e) {
+        if (window.innerWidth < 992) {
+            if (!e.target.closest('.navbar .dropdown')) {
+                document.querySelectorAll('.navbar .dropdown-menu.show').forEach(m => m.classList.remove('show'));
+            }
+        }
+    });
     // Add reveal classes automatically to common elements across pages
     const addRevealDefaults = () => {
         const defaultRevealSelectors = [
@@ -202,4 +254,6 @@ document.addEventListener('DOMContentLoaded', function() {
     wa.setAttribute('aria-label', 'WhatsApp ile yazın');
     wa.innerHTML = '<i class="fab fa-whatsapp" style="font-size: 24px;"></i>';
     document.body.appendChild(wa);
+
+    // (Reverted) Keep original hero ordering – removed mobile reordering logic
 });
