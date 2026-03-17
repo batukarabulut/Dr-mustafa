@@ -1,0 +1,220 @@
+{% load static i18n %}
+<!DOCTYPE html>
+<html lang="{{ request.LANGUAGE_CODE|default:'tr' }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Op. Dr. Mustafa Öksüz - Plastik ve Rekonstrüktif Cerrahi{% endblock %}</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}?v=nav19">
+
+    {% block extra_head %}{% endblock %}
+</head>
+
+<body>
+    <!-- Top Navbar -->
+    <div class="top-navbar">
+        <div class="container">
+            <div class="top-contact">
+                <a href="tel:{{ site_settings.phone|cut:' ' }}" class="me-4 top-link">
+                    <i class="fas fa-phone"></i><span class="ms-1">{{ site_settings.phone }}</span>
+                </a>
+                <a href="{% url 'contact' %}" class="me-4 top-link">
+                    <i class="fas fa-address-card"></i><span class="ms-1">{% trans "İletişim Bilgileri" %}</span>
+                </a>
+            </div>
+            <div class="d-flex align-items-center">
+                <!-- Language switcher: POST to set_language, aynı sayfa hedef dil URL'ine yönlendirilir -->
+                <div class="language-flags d-flex gap-1">
+                    <form action="{% url 'set_language' %}" method="post" class="d-inline">
+                        {% csrf_token %}
+                        <input name="next" type="hidden" value="{{ next_tr }}">
+                        <input name="language" type="hidden" value="tr">
+                        <button type="submit" class="border-0 bg-transparent p-0 flag-wrap{% if request.LANGUAGE_CODE == 'tr' %} active{% endif %}" title="Türkçe" aria-label="Türkçe">
+                            <img src="https://flagcdn.com/w20/tr.png" alt="TR" class="flag-btn" width="20" height="15">
+                        </button>
+                    </form>
+                    <form action="{% url 'set_language' %}" method="post" class="d-inline">
+                        {% csrf_token %}
+                        <input name="next" type="hidden" value="{{ next_en }}">
+                        <input name="language" type="hidden" value="en">
+                        <button type="submit" class="border-0 bg-transparent p-0 flag-wrap{% if request.LANGUAGE_CODE == 'en' %} active{% endif %}" title="English" aria-label="English">
+                            <img src="https://flagcdn.com/w20/gb.png" alt="EN" class="flag-btn" width="20" height="15">
+                        </button>
+                    </form>
+                    <form action="{% url 'set_language' %}" method="post" class="d-inline">
+                        {% csrf_token %}
+                        <input name="next" type="hidden" value="{{ next_de }}">
+                        <input name="language" type="hidden" value="de">
+                        <button type="submit" class="border-0 bg-transparent p-0 flag-wrap{% if request.LANGUAGE_CODE == 'de' %} active{% endif %}" title="Deutsch" aria-label="Deutsch">
+                            <img src="https://flagcdn.com/w20/de.png" alt="DE" class="flag-btn" width="20" height="15">
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Social Icons -->
+                <div class="social-icons">
+                    <a href="https://wa.me/{{ site_settings.whatsapp }}" class="social-icon whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    {% if site_settings.instagram_url %}
+                    <a href="{{ site_settings.instagram_url }}" class="social-icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    {% endif %}
+                    {% if site_settings.facebook_url %}
+                    <a href="{{ site_settings.facebook_url }}" class="social-icon facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="main-navbar" id="mainNavbar">
+        <div class="container">
+            <div class="row w-100 align-items-center">
+                <div class="col-lg-3 d-flex align-items-center">
+                    <a href="{% url 'home' %}" class="navbar-brand">
+                        <img src="{{ site_images.logo }}"
+                             alt="{{ site_settings.doctor_name }} - {% trans 'Estetik ve Plastik Cerrahi Uzmanı' %}"
+                             class="logo-img">
+                    </a>
+                </div>
+                <div class="col-lg-7">
+                    <nav class="navbar navbar-expand-lg">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url 'about' %}">{% trans "Hakkımda" %}</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown"
+                                       role="button" data-bs-toggle="dropdown">
+                                        {% trans "Estetik Cerrahi" %}
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="{% url 'rinoplasti' %}">{% trans "Rinoplasti" %}</a></li>
+                                        <li><a class="dropdown-item" href="{% url 'meme_estetigi' %}">{% trans "Meme Estetiği" %}</a></li>
+                                        <li><a class="dropdown-item" href="{% url 'yuz_estetigi' %}">{% trans "Yüz Estetiği" %}</a></li>
+                                        <li><a class="dropdown-item" href="{% url 'vucut_estetigi' %}">{% trans "Vücut Estetiği" %}</a></li>
+                                        <li><a class="dropdown-item" href="{% url 'jinekomasti' %}">{% trans "Jinekomasti" %}</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="nonsurgicalDropdown"
+                                       role="button" data-bs-toggle="dropdown">
+                                        {% trans "Ameliyatsız Estetik" %}
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="{% url 'botoks' %}">{% trans "Botoks" %}</a></li>
+                                        <li><a class="dropdown-item" href="{% url 'dolgu' %}">{% trans "Dolgu" %}</a></li>
+                                        <li><a class="dropdown-item" href="{% url 'fransiz_askisi' %}">{% trans "Fransız Askısı" %}</a></li>
+                                        <li><a class="dropdown-item" href="{% url 'mezoterapi' %}">{% trans "Mezoterapi" %}</a></li>
+                                        <li><a class="dropdown-item" href="{% url 'prp' %}">PRP</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url 'media' %}">{% trans "Medya" %}</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url 'contact' %}">{% trans "İletişim" %}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-2 text-end">
+                    <a href="{% url 'contact' %}#contact-form" class="randevu-btn">{% trans "RANDEVU" %}</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-pro">
+        <div class="footer-pro-main" style="background:#13232F;">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Brand -->
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <a href="{% url 'home' %}" class="footer-logo-link">
+                            <img src="{{ site_images.logo }}" alt="{{ site_settings.doctor_name }}" class="footer-logo">
+                        </a>
+                        <div class="footer-doctor-title">{% trans "Estetik ve Plastik Cerrahi Uzmanı" %}</div>
+                        <p class="footer-about-text">{% trans "Güvenilir ve doğal sonuçlar için modern tekniklerle hizmet veriyoruz." %}</p>
+                        <div class="footer-social-icons">
+                            <a href="https://wa.me/{{ site_settings.whatsapp }}" class="footer-social-btn whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                            {% if site_settings.instagram_url %}<a href="{{ site_settings.instagram_url }}" class="footer-social-btn instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>{% endif %}
+                            {% if site_settings.facebook_url %}<a href="{{ site_settings.facebook_url }}" class="footer-social-btn facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>{% endif %}
+                        </div>
+                    </div>
+                    <!-- Quick Links -->
+                    <div class="col-lg-2 col-md-6 col-6 mb-3">
+                        <h6 class="footer-col-title">{% trans "Sayfalar" %}</h6>
+                        <ul class="footer-link-list">
+                            <li><a href="{% url 'home' %}">{% trans "Anasayfa" %}</a></li>
+                            <li><a href="{% url 'about' %}">{% trans "Hakkımda" %}</a></li>
+                            <li><a href="{% url 'contact' %}">{% trans "İletişim" %}</a></li>
+                            <li><a href="{% url 'media' %}">{% trans "Medya" %}</a></li>
+                        </ul>
+                    </div>
+                    <!-- Services -->
+                    <div class="col-lg-3 col-md-6 col-6 mb-3">
+                        <h6 class="footer-col-title">{% trans "Hizmetler" %}</h6>
+                        <ul class="footer-link-list">
+                            <li><a href="{% url 'rinoplasti' %}">{% trans "Rinoplasti" %}</a></li>
+                            <li><a href="{% url 'meme_estetigi' %}">{% trans "Meme Estetiği" %}</a></li>
+                            <li><a href="{% url 'yuz_estetigi' %}">{% trans "Yüz Estetiği" %}</a></li>
+                            <li><a href="{% url 'botoks' %}">{% trans "Botoks" %}</a></li>
+                            <li><a href="{% url 'dolgu' %}">{% trans "Dolgu" %}</a></li>
+                            <li><a href="{% url 'fransiz_askisi' %}">{% trans "Fransız Askısı" %}</a></li>
+                        </ul>
+                    </div>
+                    <!-- Contact -->
+                    <div class="col-lg-4 col-md-6 mb-3">
+                        <h6 class="footer-col-title">{% trans "İletişim" %}</h6>
+                        <ul class="footer-contact-list">
+                            <li><i class="fas fa-phone"></i><a href="tel:{{ site_settings.phone|cut:' ' }}">{{ site_settings.phone }}</a></li>
+                            <li><i class="fab fa-whatsapp"></i><a href="https://wa.me/{{ site_settings.whatsapp }}">{% trans "WhatsApp ile yazın" %}</a></li>
+                            {% if site_settings.email %}<li><i class="fas fa-envelope"></i><a href="mailto:{{ site_settings.email }}">{{ site_settings.email }}</a></li>{% endif %}
+                            {% if site_settings.address %}<li><i class="fas fa-map-marker-alt"></i><span>{{ site_settings.address }}</span></li>{% endif %}
+                        </ul>
+                    </div>
+                </div>
+                <hr class="footer-divider">
+                <div class="footer-bottom-inner">
+                    <p class="footer-copyright">&copy; {% now "Y" %} {{ site_settings.doctor_name }}. {{ site_settings.footer_copyright }}</p>
+                    {% if site_settings.developer_credit %}<p class="footer-developer">{{ site_settings.developer_credit }}</p>{% endif %}
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS (v=3 cache bust: form uses normal POST, no fetch) -->
+    <script src="{% static 'js/main.js' %}?v=4"></script>
+
+    {% block extra_scripts %}{% endblock %}
+</body>
+</html>
+

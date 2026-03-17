@@ -1,0 +1,262 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+
+{% block title %}{% trans "Medya" %} - Op. Dr. Mustafa Öksüz{% endblock %}
+
+{% block content %}
+<div class="page-service">
+
+    <!-- HERO SECTION -->
+    <section class="service-hero-premium" style="min-height:50vh;">
+        <div class="container position-relative" style="z-index:2;">
+            <div class="text-center">
+                <nav aria-label="breadcrumb" class="mb-3"><ol class="breadcrumb mb-0 justify-content-center">
+                    <li class="breadcrumb-item"><a href="{% url 'home' %}">{% trans "Anasayfa" %}</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">{% trans "Medya" %}</li>
+                </ol></nav>
+                <div class="hero-badge" style="margin:0 auto 24px;"><i class="fas fa-camera"></i> {% trans "Galeri" %}</div>
+                <h1 class="hero-title" style="max-width:none;">{% trans "Medya" %} <span class="accent">{% trans "Galerisi" %}</span></h1>
+                <p class="hero-subtitle" style="max-width:600px;margin:0 auto;">{% trans "Klinik ortamımızdan kareler ve tedavi süreçlerimizden seçkiler" %}</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="about-service">
+        <div class="container">
+            <div class="text-center mb-4">
+                <div class="section-label justify-content-center" style="display:flex;">{% trans "Fotoğraflar" %}</div>
+                <h2 class="section-title">{% trans "Fotoğraf Galerisi" %}</h2>
+                <p class="text-muted mt-2">{% trans "Kliniğimiz, uygulamalar ve ön/sonra çekimlerden kareler" %}</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#mediaModal1">
+                            <img src="{{ site_images.mainpage1 }}" class="card-img-top" alt="{% trans 'Klinik görüntü 1' %}">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">{% trans "Klinikten Bir Kare" %}</h5>
+                            <p class="card-text text-muted mb-0">{% trans "Modern ve konforlu klinik ortamımız." %}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#mediaModal2">
+                            <img src="{{ site_images.mainpage2 }}" class="card-img-top" alt="{% trans 'Klinik görüntü 2' %}">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">{% trans "Hasta Karşılama" %}</h5>
+                            <p class="card-text text-muted mb-0">{% trans "Profesyonel ekibimizle güler yüzlü karşılama." %}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#mediaModal3">
+                            <img src="{{ site_images.prp_card }}" class="card-img-top" alt="{% trans 'Uygulama görüntüsü' %}">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">{% trans "Uygulama Anı" %}</h5>
+                            <p class="card-text text-muted mb-0">{% trans "Hijyenik ve güvenli uygulama süreçleri." %}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#mediaModal4">
+                            <img src="{{ site_images.rinoplasti_card }}" class="card-img-top" alt="{% trans 'Rinoplasti' %}">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">{% trans "Rinoplasti" %}</h5>
+                            <p class="card-text text-muted mb-0">{% trans "Burun estetiği alanından örnek bir görsel." %}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#mediaModal5">
+                            <img src="{{ site_images.meme_estetigi_card }}" class="card-img-top" alt="{% trans 'Meme estetiği' %}">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">{% trans "Meme Estetiği" %}</h5>
+                            <p class="card-text text-muted mb-0">{% trans "Şekillendirme ve simetri odaklı yaklaşım." %}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#mediaModal6">
+                            <img src="{{ site_images.yuz_estetigi_card }}" class="card-img-top" alt="{% trans 'Yüz estetiği' %}">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">{% trans "Yüz Estetiği" %}</h5>
+                            <p class="card-text text-muted mb-0">{% trans "Doğal ve dengeli yüz hatları için çözümler." %}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#mediaModal7">
+                            <img src="{{ site_images.vucut_estetigi_card }}" class="card-img-top" alt="{% trans 'Vücut estetiği' %}">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">{% trans "Vücut Estetiği" %}</h5>
+                            <p class="card-text text-muted mb-0">{% trans "Şekillendirme ve incelme uygulamalarımız." %}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#mediaModal8">
+                            <img src="{{ site_images.botoks_card }}" class="card-img-top" alt="{% trans 'Botoks' %}">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">{% trans "Botoks" %}</h5>
+                            <p class="card-text text-muted mb-0">{% trans "Mimik çizgilerine etkili çözümler." %}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#mediaModal9">
+                            <img src="{{ site_images.dolgu_card }}" class="card-img-top" alt="{% trans 'Dolgu' %}">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">{% trans "Dolgu Uygulamaları" %}</h5>
+                            <p class="card-text text-muted mb-0">{% trans "Hacim ve kontur için güvenli dolgular." %}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATES SECTION -->
+    <section class="process-section">
+        <div class="container">
+            <div class="text-center mb-4">
+                <div class="section-label justify-content-center" style="display:flex;">{% trans "Mesleki Yetkinlik" %}</div>
+                <h2 class="section-title">{% trans "Sertifikalar" %}</h2>
+                <p class="text-muted mt-2">{% trans "Mesleki yetkinliklerimi belgeleyen seçili sertifikalar ve üyelikler" %}</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 d-flex align-items-start">
+                            <i class="fas fa-certificate text-warning me-3" style="font-size: 1.6rem;"></i>
+                            <div>
+                                <h6 class="mb-1">{% trans "Türk Plastik Cerrahi Derneği Üyesi" %}</h6>
+                                <small class="text-muted">{% trans "Tam üyelik" %}</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 d-flex align-items-start">
+                            <i class="fas fa-award text-primary me-3" style="font-size: 1.6rem;"></i>
+                            <div>
+                                <h6 class="mb-1">ISAPS</h6>
+                                <small class="text-muted">{% trans "Üyelik" %}</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 d-flex align-items-start">
+                            <i class="fas fa-stamp text-success me-3" style="font-size: 1.6rem;"></i>
+                            <div>
+                                <h6 class="mb-1">{% trans "Botoks ve Dermal Dolgu Uygulamaları" %}</h6>
+                                <small class="text-muted">{% trans "Yetkinlik sertifikası" %}</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <div class="container position-relative" style="z-index:2;">
+            <div class="text-center">
+                <h2 class="cta-title">{% trans "Detaylı Bilgi ve Randevu" %}</h2>
+                <p class="cta-subtitle">{% trans "Uygulamalarımız hakkında bilgi almak için bizimle iletişime geçin." %}</p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="{% url 'contact' %}" class="cta-btn-phone"><i class="fas fa-calendar-alt"></i> {% trans "Randevu Al" %}</a>
+                    <a href="https://wa.me/905407404077" class="cta-btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<!-- IMAGE MODALS -->
+<div class="modal fade" id="mediaModal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <img src="{{ site_images.mainpage1 }}" class="img-fluid" alt="{% trans 'Klinik görüntü 1' %}">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="mediaModal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <img src="{{ site_images.mainpage2 }}" class="img-fluid" alt="{% trans 'Klinik görüntü 2' %}">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="mediaModal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <img src="{{ site_images.prp_card }}" class="img-fluid" alt="{% trans 'Uygulama görüntüsü' %}">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="mediaModal4" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <img src="{{ site_images.rinoplasti_card }}" class="img-fluid" alt="{% trans 'Rinoplasti' %}">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="mediaModal5" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <img src="{{ site_images.meme_estetigi_card }}" class="img-fluid" alt="{% trans 'Meme estetiği' %}">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="mediaModal6" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <img src="{{ site_images.yuz_estetigi_card }}" class="img-fluid" alt="{% trans 'Yüz estetiği' %}">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="mediaModal7" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <img src="{{ site_images.vucut_estetigi_card }}" class="img-fluid" alt="{% trans 'Vücut estetiği' %}">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="mediaModal8" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <img src="{{ site_images.botoks_card }}" class="img-fluid" alt="{% trans 'Botoks' %}">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="mediaModal9" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <img src="{{ site_images.dolgu_card }}" class="img-fluid" alt="{% trans 'Dolgu' %}">
+        </div>
+    </div>
+</div>
+{% endblock %}

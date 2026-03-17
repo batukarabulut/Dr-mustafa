@@ -1,0 +1,336 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+
+{% block title %}{% trans "İletişim" %} - Op. Dr. Mustafa Öksüz{% endblock %}
+
+{% block content %}
+<div class="page-service">
+
+    <!-- PREMIUM HERO -->
+    <section class="service-hero-premium" style="min-height:50vh;">
+        <div class="container position-relative" style="z-index:2;">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <nav aria-label="breadcrumb" class="mb-3"><ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="{% url 'home' %}">{% trans "Anasayfa" %}</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">{% trans "İletişim" %}</li>
+                    </ol></nav>
+                    <div class="hero-badge"><i class="fas fa-envelope-open-text"></i> {% trans "İletişim" %}</div>
+                    <h1 class="hero-title">{% trans "Bizimle" %} <span class="accent">{% trans "İletişime" %}</span> {% trans "Geçin" %}</h1>
+                    <p class="hero-subtitle">{% trans "Sorularınız ve randevu talepleriniz için bize ulaşın" %}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK CONTACT CARDS -->
+    <section class="stats-strip">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 contact-card" style="border-radius:16px;">
+                        <div class="card-body p-4">
+                            <i class="fas fa-phone mb-3" style="font-size:2.5rem; color:var(--color-primary);"></i>
+                            <h5>{% trans "Telefon" %}</h5>
+                            <p class="text-muted mb-3">+90 540 740 40 77</p>
+                            <a href="tel:+905407404077" class="btn btn-outline-primary btn-sm">{% trans "Hemen Ara" %}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 contact-card" style="border-radius:16px;">
+                        <div class="card-body p-4">
+                            <i class="fab fa-whatsapp text-success mb-3" style="font-size:2.5rem;"></i>
+                            <h5>WhatsApp</h5>
+                            <p class="text-muted mb-3">7/24 {% trans "Mesaj" %}</p>
+                            <a href="https://wa.me/905407404077" class="btn btn-outline-success btn-sm">{% trans "Mesaj Gönder" %}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 contact-card" style="border-radius:16px;">
+                        <div class="card-body p-4">
+                            <i class="fas fa-envelope text-warning mb-3" style="font-size:2.5rem;"></i>
+                            <h5>{% trans "E-posta" %}</h5>
+                            <p class="text-muted mb-3">drmustafaoksuz@gmail.com</p>
+                            <a href="mailto:drmustafaoksuz@gmail.com" class="btn btn-outline-warning btn-sm">{% trans "E-posta Gönder" %}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 contact-card" style="border-radius:16px;">
+                        <div class="card-body p-4">
+                            <i class="fab fa-instagram text-danger mb-3" style="font-size:2.5rem;"></i>
+                            <h5>Instagram</h5>
+                            <p class="text-muted mb-3">@plasticsurgeon.mustafaoksuz</p>
+                            <a href="{{ site_settings.instagram_url }}" class="btn btn-outline-danger btn-sm">{% trans "Takip Et" %}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM & SIDEBAR -->
+    <section id="contact-form" class="about-service">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="section-label justify-content-center" style="display:flex;">{% trans "Form" %}</div>
+                <h2 class="about-title">{% trans "Bize" %} <span class="accent">{% trans "Mesaj" %}</span> {% trans "Gönderin" %}</h2>
+                <p class="text-muted mt-2">{% trans "Sorularınızı iletebilir, randevu talep edebilirsiniz" %}</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Contact Form -->
+                <div class="col-lg-8 mb-4">
+                    <div class="card border-0 shadow-lg" style="border-radius:16px; overflow:hidden;">
+                        <div class="card-header text-white text-center py-4" style="background:linear-gradient(135deg,var(--color-primary),var(--color-secondary,#1a5276));">
+                            <h4 class="mb-0">
+                                <i class="fas fa-paper-plane me-2"></i>{% trans "İletişim Formu" %}
+                            </h4>
+                        </div>
+                        <div class="card-body p-4 p-lg-5">
+                            <div id="contact-alert" class="alert d-none" role="alert"></div>
+                            {% if success %}
+                                <div class="alert alert-success" role="alert">
+                                    {% trans "Mesajınız başarıyla iletildi. En kısa sürede size dönüş yapacağız." %}
+                                </div>
+                            {% endif %}
+                            {% if form.errors %}
+                                <div class="alert alert-danger" role="alert">
+                                    {% trans "Lütfen formu kontrol edin. Zorunlu alanları doldurduğunuzdan ve KVKK onayını işaretlediğinizden emin olun." %}
+                                </div>
+                            {% endif %}
+                            <form id="contact-form" method="post" action="" novalidate>
+                                {% csrf_token %}
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <label for="name" class="form-label fw-bold">
+                                            <i class="fas fa-user me-2" style="color:var(--color-primary);"></i>{% trans "Ad Soyad" %} *
+                                        </label>
+                                        <input type="text" class="form-control form-control-lg" id="name" name="name"
+                                               value="{{ form.name.value|default_if_none:'' }}" required>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <label for="email" class="form-label fw-bold">
+                                            <i class="fas fa-envelope me-2" style="color:var(--color-primary);"></i>{% trans "E-posta" %} *
+                                        </label>
+                                        <input type="email" class="form-control form-control-lg" id="email" name="email"
+                                               value="{{ form.email.value|default_if_none:'' }}" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <label for="phone" class="form-label fw-bold">
+                                            <i class="fas fa-phone me-2" style="color:var(--color-primary);"></i>{% trans "Telefon" %} *
+                                        </label>
+                                        <input type="tel" class="form-control form-control-lg" id="phone" name="phone"
+                                               value="{{ form.phone.value|default_if_none:'' }}" required>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <label for="subject" class="form-label fw-bold">
+                                            <i class="fas fa-tag me-2" style="color:var(--color-primary);"></i>{% trans "Konu" %}
+                                        </label>
+                                        <input type="text" class="form-control form-control-lg" id="subject" name="subject"
+                                               value="{{ form.subject.value|default_if_none:'' }}"
+                                               placeholder="{% trans 'Hangi konuda bilgi almak istiyorsunuz?' %}">
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="message" class="form-label fw-bold">
+                                        <i class="fas fa-comment me-2" style="color:var(--color-primary);"></i>{% trans "Mesajınız" %} *
+                                    </label>
+                                    <textarea class="form-control form-control-lg" id="message" name="message" rows="6"
+                                              placeholder="{% trans 'Mesajınızı buraya yazın...' %}" required>{{ form.message.value|default_if_none:'' }}</textarea>
+                                </div>
+
+                                <!-- KVKK Checkbox -->
+                                <div class="mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="kvkk" name="kvkk"
+                                               {% if form.kvkk.value %}checked{% endif %} required>
+                                        <label class="form-check-label" for="kvkk">
+                                            <small>
+                                                {% trans "KVKK Aydınlatma Metni'ni okudum ve kabul ediyorum. Kişisel verilerimin işlenmesine onay veriyorum." %}
+                                            </small>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-lg w-100 py-3 text-white" style="background:linear-gradient(135deg,var(--color-primary),var(--color-secondary,#1a5276)); border:none; border-radius:12px;">
+                                    <span class="btn-text">
+                                        <i class="fas fa-paper-plane me-2"></i>{% trans "Mesaj Gönder" %}
+                                    </span>
+                                    <span class="btn-spinner spinner-border spinner-border-sm d-none ms-2" role="status"
+                                          aria-hidden="true"></span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Info Sidebar -->
+                <div class="col-lg-4">
+                    <!-- Office Location -->
+                    <div class="card border-0 shadow-sm mb-4" style="border-radius:16px;">
+                        <div class="card-body p-4">
+                            <h5 class="card-title mb-4" style="font-family:'Playfair Display',serif;">
+                                <i class="fas fa-map-marker-alt me-2" style="color:var(--color-primary);"></i>{% trans "Muayenehane Adresi" %}
+                            </h5>
+                            <p class="mb-3">
+                                <strong>Op. Dr. Mustafa Öksüz</strong><br>
+                                Kahramanlar,<br>
+                                Nevzat Güzelırmak Sk.<br>
+                                No:29, 35230<br>
+                                Konak/İzmir
+                            </p>
+                            <a href="https://g.co/kgs/nEXptw1" target="_blank" class="btn btn-outline-primary btn-sm">
+                                <i class="fas fa-directions me-2"></i>{% trans "Yol Tarifi" %}
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Working Hours -->
+                    <div class="card border-0 shadow-sm mb-4" style="border-radius:16px;">
+                        <div class="card-body p-4">
+                            <h5 class="card-title mb-4" style="font-family:'Playfair Display',serif;">
+                                <i class="fas fa-clock me-2" style="color:var(--color-primary);"></i>{% trans "Çalışma Saatleri" %}
+                            </h5>
+                            <div class="mb-3">
+                                <strong>{% trans "Pazartesi - Cuma" %}:</strong><br>
+                                09:00 - 18:00
+                            </div>
+                            <div class="mb-3">
+                                <strong>{% trans "Cumartesi" %}:</strong><br>
+                                09:00 - 16:00
+                            </div>
+                            <div class="mb-3">
+                                <strong>{% trans "Pazar" %}:</strong><br>
+                                <span class="text-muted">{% trans "Kapalı" %}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Emergency Contact -->
+                    <div class="card border-0 shadow-sm mb-4" style="border-radius:16px; overflow:hidden;">
+                        <div class="card-body p-4 text-white text-center" style="background:linear-gradient(135deg,var(--color-primary),var(--color-secondary,#1a5276));">
+                            <h5 class="card-title mb-3">
+                                <i class="fas fa-ambulance me-2"></i>{% trans "Acil Durumlar" %}
+                            </h5>
+                            <p class="mb-3">{% trans "Ameliyat sonrası takip ve acil durumlar için" %}</p>
+                            <a href="https://wa.me/905407404077" class="btn btn-light btn-sm">
+                                <i class="fab fa-whatsapp me-2"></i>7/24 WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP SECTION -->
+    <section class="py-5" style="background:var(--bg-light, #f8f9fa);">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="section-label justify-content-center" style="display:flex;">{% trans "Konum" %}</div>
+                <h2 class="about-title">{% trans "Bizi" %} <span class="accent">{% trans "Ziyaret" %}</span> {% trans "Edin" %}</h2>
+                <p class="text-muted mt-2">{% trans "Muayenehane lokasyonumuz" %}</p>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="map-container" style="border-radius:16px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.1);">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10512.962516501184!2d27.14294708865548!3d38.42939955597884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd8f4d69c4e89%3A0xb25b8452ce40720b!2sOp.%20Dr.%20Mustafa%20%C3%96ks%C3%BCz%20%C4%B0zmir%20Estetik%20ve%20Plastik%20Cerrahi%20Meme%20Esteti%C4%9Fi%20Botox%20Filler%20Burun%20Esteti%C4%9Fi%20Dudak%20Dolgusu!5e0!3m2!1str!2str!4v1757421941880!5m2!1str!2str"
+                            width="100%"
+                            height="520"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="text-center mb-4">
+                <div class="section-label justify-content-center" style="display:flex;">{% trans "SSS" %}</div>
+                <h2 class="about-title">{% trans "Sık Sorulan" %} <span class="accent">{% trans "Sorular" %}</span></h2>
+                <p class="text-muted mt-2">{% trans "İletişim hakkında merak ettikleriniz" %}</p>
+            </div>
+            <div class="row"><div class="col-lg-8 mx-auto">
+                <div class="accordion faq-custom" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                <i class="fas fa-question-circle me-3" style="opacity:0.6;"></i>{% trans "Konsültasyon ücretsiz mi?" %}
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                {% trans "Evet, ilk konsültasyonunuz tamamen ücretsizdir. Bu görüşmede işleminiz hakkında detaylı bilgi alabilir ve sorularınızı sorabilirsiniz." %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                <i class="fas fa-question-circle me-3" style="opacity:0.6;"></i>{% trans "Randevu nasıl alabilirim?" %}
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                {% trans "Telefon, WhatsApp veya bu formu kullanarak randevu alabilirsiniz. En hızlı yöntem WhatsApp üzerinden mesaj göndermektir." %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                <i class="fas fa-question-circle me-3" style="opacity:0.6;"></i>{% trans "Ameliyat sonrası takip nasıl yapılır?" %}
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                {% trans "Ameliyat sonrası 7/24 WhatsApp hattımızdan bize ulaşabilirsiniz. Düzenli kontrol randevularınız planlanır ve takip edilir." %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                <i class="fas fa-question-circle me-3" style="opacity:0.6;"></i>{% trans "Şehir dışından geliyorum, konaklama desteği var mı?" %}
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                {% trans "Şehir dışından gelen hastalarımız için yakın oteller hakkında bilgi verebiliriz. Konaklama planlamanızda size yardımcı oluyoruz." %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <div class="container position-relative" style="z-index:2;">
+            <div class="text-center">
+                <h2 class="cta-title">{% trans "Hemen İletişime Geçin" %}</h2>
+                <p class="cta-subtitle">{% trans "Sorularınız ve randevu talepleriniz için bize ulaşın" %}</p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="https://wa.me/905407404077" class="cta-btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="tel:+905407404077" class="cta-btn-phone"><i class="fas fa-phone"></i> {% trans "Hemen Ara" %}</a>
+                    <a href="#contact-form" class="cta-btn-randevu"><i class="fas fa-calendar-alt"></i> {% trans "Randevu Al" %}</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+{% endblock %}

@@ -1,0 +1,1737 @@
+# German translations for surgeon_site.
+# Copyright (C) 2025
+# This file is distributed under the same license as the surgeon_site project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-06 12:00+0000\n"
+"PO-Revision-Date: 2025-02-06 12:00+0000\n"
+"Last-Translator: \n"
+"Language: de\n"
+"Language-Team: de\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "İletişim Bilgileri"
+msgstr "Kontaktinformationen"
+
+msgid "Hakkımda"
+msgstr "Über mich"
+
+msgid "Estetik Cerrahi"
+msgstr "Ästhetische Chirurgie"
+
+msgid "Rinoplasti"
+msgstr "Rhinoplastik"
+
+msgid "Meme Estetiği"
+msgstr "Brustästhetik"
+
+msgid "Yüz Estetiği"
+msgstr "Gesichtsästhetik"
+
+msgid "Vücut Estetiği"
+msgstr "Körperstraffung"
+
+msgid "Jinekomasti"
+msgstr "Gynäkomastie"
+
+msgid "Ameliyatsız Estetik"
+msgstr "Nicht-chirurgische Ästhetik"
+
+msgid "Botoks"
+msgstr "Botox"
+
+msgid "Dolgu"
+msgstr "Filler"
+
+msgid "Fransız Askısı"
+msgstr "French Lift"
+
+msgid "Mezoterapi"
+msgstr "Mesotherapie"
+
+msgid "Hasta Yorumları"
+msgstr "Patientenbewertungen"
+
+msgid "Google Yorumları"
+msgstr "Google Bewertungen"
+
+msgid "Trustpilot Yorumları"
+msgstr "Trustpilot Bewertungen"
+
+msgid "Medya"
+msgstr "Medien"
+
+msgid "İletişim"
+msgstr "Kontakt"
+
+msgid "RANDEVU"
+msgstr "TERMIN"
+
+msgid "Anasayfa"
+msgstr "Startseite"
+
+msgid "Ücretsiz Konsültasyon"
+msgstr "Kostenlose Beratung"
+
+msgid "Süreç Hakkında"
+msgstr "Über den Ablauf"
+
+msgid "Hemen Ara"
+msgstr "Jetzt anrufen"
+
+msgid "Randevu Al"
+msgstr "Termin buchen"
+
+msgid "Konsültasyonunuz tamamen ücretsiz ve yükümlülük gerektirmez"
+msgstr "Ihre Beratung ist völlig kostenlos und unverbindlich"
+
+msgid "Ücretsiz Konsültasyon Alın"
+msgstr "Kostenlose Beratung anfragen"
+
+msgid "Tüm hakları saklıdır."
+msgstr "Alle Rechte vorbehalten."
+
+# Contact page & form
+msgid "Bizimle İletişime Geçin"
+msgstr "Kontaktieren Sie uns"
+
+msgid "Telefon"
+msgstr "Telefon"
+
+msgid "Mesaj Gönder"
+msgstr "Nachricht senden"
+
+msgid "E-posta"
+msgstr "E-Mail"
+
+msgid "E-posta Gönder"
+msgstr "E-Mail senden"
+
+msgid "Takip Et"
+msgstr "Folgen"
+
+msgid "Bize Mesaj Gönderin"
+msgstr "Senden Sie uns eine Nachricht"
+
+msgid "Sorularınızı iletebilir, randevu talep edebilirsiniz"
+msgstr "Sie können Fragen stellen oder einen Termin anfragen"
+
+msgid "İletişim Formu"
+msgstr "Kontaktformular"
+
+msgid "Mesajınız başarıyla iletildi. En kısa sürede size dönüş yapacağız."
+msgstr "Ihre Nachricht wurde erfolgreich gesendet. Wir melden uns schnellstmöglich bei Ihnen."
+
+msgid "Lütfen formu kontrol edin. Zorunlu alanları doldurduğunuzdan ve KVKK onayını işaretlediğinizden emin olun."
+msgstr "Bitte prüfen Sie das Formular. Füllen Sie alle Pflichtfelder aus und akzeptieren Sie die Datenschutzerklärung."
+
+msgid "Ad Soyad"
+msgstr "Name"
+
+msgid "Konu"
+msgstr "Betreff"
+
+msgid "Mesajınız"
+msgstr "Ihre Nachricht"
+
+msgid "Hangi konuda bilgi almak istiyorsunuz?"
+msgstr "Wozu möchten Sie mehr erfahren?"
+
+msgid "Mesajınızı buraya yazın..."
+msgstr "Schreiben Sie hier Ihre Nachricht..."
+
+msgid "KVKK Aydınlatma Metni"
+msgstr "Datenschutzhinweis"
+
+msgid "KVKK Aydınlatma Metni'ni okudum ve kabul ediyorum. Kişisel verilerimin işlenmesine onay veriyorum."
+msgstr "Ich habe den Datenschutzhinweis gelesen und akzeptiert. Ich stimme der Verarbeitung meiner personenbezogenen Daten zu."
+
+msgid "Muayenehane Adresi"
+msgstr "Praxisadresse"
+
+msgid "Yol Tarifi"
+msgstr "Route planen"
+
+msgid "Çalışma Saatleri"
+msgstr "Öffnungszeiten"
+
+msgid "Pazartesi - Cuma"
+msgstr "Montag - Freitag"
+
+msgid "Cumartesi"
+msgstr "Samstag"
+
+msgid "Pazar"
+msgstr "Sonntag"
+
+msgid "Kapalı"
+msgstr "Geschlossen"
+
+msgid "Acil Durumlar"
+msgstr "Notfall"
+
+msgid "Ameliyat sonrası takip ve acil durumlar için"
+msgstr "Für Nachsorge und Notfälle nach der Operation"
+
+msgid "Bizi Ziyaret Edin"
+msgstr "Besuchen Sie uns"
+
+msgid "Muayenehane lokasyonumuz"
+msgstr "Standort unserer Praxis"
+
+msgid "Sık Sorulan Sorular"
+msgstr "Häufige Fragen"
+
+msgid "İletişim hakkında merak ettikleriniz"
+msgstr "Wissenswertes zur Kontaktaufnahme"
+
+msgid "Konsültasyon ücretsiz mi?"
+msgstr "Ist die Beratung kostenlos?"
+
+msgid "Evet, ilk konsültasyonunuz tamamen ücretsizdir. Bu görüşmede işleminiz hakkında detaylı bilgi alabilir ve sorularınızı sorabilirsiniz."
+msgstr "Ja, Ihre erste Beratung ist völlig kostenlos. In diesem Gespräch erhalten Sie ausführliche Informationen zu Ihrem Eingriff und können Fragen stellen."
+
+msgid "Randevu nasıl alabilirim?"
+msgstr "Wie kann ich einen Termin buchen?"
+
+msgid "Telefon, WhatsApp veya bu formu kullanarak randevu alabilirsiniz. En hızlı yöntem WhatsApp üzerinden mesaj göndermektir."
+msgstr "Sie können per Telefon, WhatsApp oder über dieses Formular einen Termin buchen. Am schnellsten geht es per WhatsApp."
+
+msgid "Ameliyat sonrası takip nasıl yapılır?"
+msgstr "Wie läuft die Nachsorge nach der Operation?"
+
+msgid "Ameliyat sonrası 7/24 WhatsApp hattımızdan bize ulaşabilirsiniz. Düzenli kontrol randevularınız planlanır ve takip edilir."
+msgstr "Nach der Operation erreichen Sie uns rund um die Uhr per WhatsApp. Ihre Kontrolltermine werden geplant und begleitet."
+
+msgid "Şehir dışından geliyorum, konaklama desteği var mı?"
+msgstr "Ich komme von außerhalb – gibt es Unterstützung bei der Unterkunft?"
+
+msgid "Şehir dışından gelen hastalarımız için yakın oteller hakkında bilgi verebiliriz. Konaklama planlamanızda size yardımcı oluyoruz."
+msgstr "Für Patienten von außerhalb geben wir gern Auskunft zu nahe gelegenen Hotels und unterstützen Sie bei der Planung Ihrer Unterkunft."
+
+msgid "KVKK onayı"
+msgstr "Einwilligung Datenschutz"
+
+# Google & Trustpilot
+msgid "Uluslararası Hasta Deneyimleri"
+msgstr "Internationale Patientenerfahrungen"
+
+msgid "Dünya çapından hasta yorumları ve değerlendirmeleri"
+msgstr "Bewertungen und Erfahrungen von Patienten weltweit"
+
+msgid "Trustpilot'ta Görüntüle"
+msgstr "Auf Trustpilot ansehen"
+
+msgid "Trustpilot Puanı"
+msgstr "Trustpilot-Bewertung"
+
+msgid "Toplam Yorum"
+msgstr "Bewertungen gesamt"
+
+msgid "Farklı Ülke"
+msgstr "Länder"
+
+msgid "Mükemmel"
+msgstr "Ausgezeichnet"
+
+msgid "Trustpilot Derecesi"
+msgstr "Trustpilot-Note"
+
+msgid "Trustpilot Hasta Yorumları"
+msgstr "Trustpilot Patientenbewertungen"
+
+msgid "Uluslararası hastalarımızın deneyimleri"
+msgstr "Erfahrungen unserer internationalen Patienten"
+
+msgid "Trustpilot'ta Tüm Yorumları Görüntüle"
+msgstr "Alle Bewertungen auf Trustpilot ansehen"
+
+msgid "Estetik ve plastik cerrahi ile ilgili tüm sorularınızı yanıtlayalım"
+msgstr "Wir beantworten alle Ihre Fragen zur ästhetischen und plastischen Chirurgie"
+
+msgid "Hastalarımızın Google'da Paylaştığı Deneyimleri"
+msgstr "Erfahrungen unserer Patienten bei Google"
+
+msgid "Gerçek hasta yorumları ve değerlendirmeleri"
+msgstr "Echte Patientenbewertungen und -erfahrungen"
+
+msgid "Google'da Görüntüle"
+msgstr "Bei Google ansehen"
+
+msgid "Ortalama Puan"
+msgstr "Durchschnittsbewertung"
+
+msgid "Memnuniyet Oranı"
+msgstr "Zufriedenheitsrate"
+
+msgid "Mutlu Hasta"
+msgstr "Zufriedene Patienten"
+
+msgid "Son Google Yorumları"
+msgstr "Neueste Google-Bewertungen"
+
+msgid "Hastalarımızın gerçek deneyimleri"
+msgstr "Echte Erfahrungen unserer Patienten"
+
+msgid "Google'da Tüm Yorumları Görüntüle"
+msgstr "Alle Bewertungen bei Google ansehen"
+
+msgid "Siz de Yorumunuzu Paylaşın"
+msgstr "Teilen auch Sie Ihre Bewertung"
+
+msgid "Deneyiminizi diğer hastalarla paylaşarak onlara yardımcı olun"
+msgstr "Helfen Sie anderen, indem Sie Ihre Erfahrung teilen"
+
+msgid "Google'da Yorum Yap"
+msgstr "Bei Google bewerten"
+
+# PRP
+msgid "PRP Tedavisi"
+msgstr "PRP-Behandlung"
+
+msgid "Platelet Rich Plasma ile Doğal Gençleşme"
+msgstr "Natürliche Verjüngung mit plättchenreichem Plasma"
+
+msgid "Kendi kanınızdan elde edilen trombositlerle cilt yenileme"
+msgstr "Hauterneuerung mit Thrombozyten aus Ihrem eigenen Blut"
+
+msgid "Uygulama Süresi"
+msgstr "Behandlungsdauer"
+
+msgid "Dakika"
+msgstr "Minuten"
+
+msgid "Hastanede Kalış"
+msgstr "Klinikaufenthalt"
+
+msgid "Yok"
+msgstr "Keiner"
+
+msgid "Topikal Krem"
+msgstr "Lokale Creme"
+
+msgid "Seans Sayısı"
+msgstr "Anzahl Sitzungen"
+
+msgid "Seans"
+msgstr "Sitzung"
+
+msgid "PRP Tedavisi Nedir?"
+msgstr "Was ist die PRP-Behandlung?"
+
+msgid "PRP (Platelet Rich Plasma), kişinin kendi kanından elde edilen trombositce zengin plazmanın cilt altına enjekte edilmesi ile yapılan doğal gençleşme tedavisidir."
+msgstr "PRP (plättchenreiches Plasma) ist eine natürliche Verjüngungsbehandlung, bei der aus dem eigenen Blut gewonnenes Plasma in die Haut injiziert wird."
+
+msgid "Bu tedavide kişinin kendi kanı alınır, özel bir süreçte işlenerek trombositler yoğunlaştırılır. Elde edilen PRP, büyüme faktörleri bakımından zengin olup cilt yenilenmesini hızlandırır."
+msgstr "Bei dieser Behandlung wird Blut entnommen und in einem speziellen Verfahren zu plättchenreichem Plasma verarbeitet. Das PRP fördert die Hauterneuerung."
+
+msgid "Uygulama Alanları:"
+msgstr "Behandlungsbereiche:"
+
+msgid "Yüz gençleştirme"
+msgstr "Gesichtsverjüngung"
+
+msgid "Boyun ve dekolte"
+msgstr "Hals und Dekolleté"
+
+msgid "El sırtı"
+msgstr "Handrücken"
+
+msgid "Saç dökülmesi tedavisi"
+msgstr "Haarausfallbehandlung"
+
+msgid "PRP'nin Faydaları:"
+msgstr "Vorteile von PRP:"
+
+msgid "Kolajen üretimi artışı"
+msgstr "Erhöhte Kollagenproduktion"
+
+msgid "Cilt elastikiyeti iyileşmesi"
+msgstr "Verbesserte Hautelastizität"
+
+msgid "İnce çizgilerin azalması"
+msgstr "Reduzierung feiner Linien"
+
+msgid "Cilt tonunun düzelmesi"
+msgstr "Verbesserter Hautton"
+
+msgid "PRP Uygulama Süreci"
+msgstr "PRP-Behandlungsablauf"
+
+msgid "Kan alımından cilt uygulamasına kadar"
+msgstr "Von der Blutentnahme bis zur Hautanwendung"
+
+msgid "Detaylı Konsültasyon"
+msgstr "Ausführliche Beratung"
+
+msgid "Cilt analizi yapılır ve PRP tedavisine uygunluk değerlendirilir. Tedavi beklentileri görüşülür."
+msgstr "Hautanalyse und Eignung für PRP werden besprochen."
+
+msgid "Kan Alımı"
+msgstr "Blutentnahme"
+
+msgid "Hastadan 8-20 ml kan alınır. Bu işlem standart kan tahlili gibi basit ve hızlıdır."
+msgstr "8-20 ml Blut werden entnommen – einfach und schnell wie ein Standard-Bluttest."
+
+msgid "Santrifüj İşlemi"
+msgstr "Zentrifugation"
+
+msgid "Kan özel santrifüj cihazında işlenerek trombositce zengin plazma elde edilir."
+msgstr "Das Blut wird zentrifugiert, um plättchenreiches Plasma zu gewinnen."
+
+msgid "Cilt Hazırlığı"
+msgstr "Hautvorbereitung"
+
+msgid "Uygulanacak bölge temizlenir ve topikal anestezi kremi uygulanır."
+msgstr "Die Behandlungszone wird gereinigt und mit Betäubungscreme vorbereitet."
+
+msgid "PRP Enjeksiyonu"
+msgstr "PRP-Injektion"
+
+msgid "Elde edilen PRP ince iğnelerle cilt altına enjekte edilir. İşlem 15-20 dakika sürer."
+msgstr "Das PRP wird mit feinen Nadeln in die Haut injiziert. Die Anwendung dauert 15-20 Minuten."
+
+msgid "İyileşme ve Takip"
+msgstr "Nachsorge"
+
+msgid "3-4 hafta arayla 3-4 seans uygulanır. Her seansta cilt kalitesi iyileşir."
+msgstr "3-4 Sitzungen im Abstand von 3-4 Wochen. Die Hautqualität verbessert sich mit jeder Sitzung."
+
+msgid "Neden PRP Tedavisi?"
+msgstr "Warum PRP?"
+
+msgid "PRP tedavisi kişinin kendi kanından elde edildiği için en doğal ve güvenli gençleşme yöntemidir. Alerjik reaksiyon riski yoktur."
+msgstr "Da PRP aus dem eigenen Blut gewonnen wird, ist es eine sehr natürliche und sichere Verjüngungsmethode ohne Allergierisiko."
+
+msgid "%100 Doğal"
+msgstr "100 % natürlich"
+
+msgid "Kendi kanınızdan elde edilen plazma"
+msgstr "Plasma aus Ihrem eigenen Blut"
+
+msgid "Büyüme Faktörleri"
+msgstr "Wachstumsfaktoren"
+
+msgid "Doğal büyüme faktörleriyle rejenerasyon"
+msgstr "Regeneration durch natürliche Wachstumsfaktoren"
+
+msgid "Güvenli Tedavi"
+msgstr "Sichere Behandlung"
+
+msgid "Alerjik reaksiyon riski yok"
+msgstr "Kein Allergierisiko"
+
+msgid "Uzun Süreli Etki"
+msgstr "Lang anhaltende Wirkung"
+
+msgid "Kalıcı cilt kalitesi iyileşmesi"
+msgstr "Anhaltende Verbesserung der Hautqualität"
+
+msgid "PRP tedavisi hakkında merak ettikleriniz"
+msgstr "Wissenswertes zur PRP-Behandlung"
+
+msgid "PRP tedavisi ağrılı mıdır?"
+msgstr "Ist die PRP-Behandlung schmerzhaft?"
+
+msgid "PRP uygulaması hafif batma hissi verebilir. Topikal anestezi kremi kullanılarak rahatsızlık minimuma indirilir."
+msgstr "Leichtes Stechen möglich. Mit Betäubungscreme wird das Unbehagen minimiert."
+
+msgid "PRP kaç seans gerektirir?"
+msgstr "Wie viele PRP-Sitzungen sind nötig?"
+
+msgid "Genellikle 3-4 seans önerilir. Seanslar 3-4 hafta arayla yapılır. Sonuçlar 2-3 ay içinde belirginleşir."
+msgstr "In der Regel 3-4 Sitzungen im Abstand von 3-4 Wochen. Sichtbare Ergebnisse nach 2-3 Monaten."
+
+msgid "PRP güvenli midir?"
+msgstr "Ist PRP sicher?"
+
+msgid "Evet. Kendi kanınızdan elde edildiği için alerji ve red reaksiyonu riski yoktur. Steril koşullarda uygulanır."
+msgstr "Ja. Da es aus Ihrem eigenen Blut stammt, gibt es kein Allergie- oder Abstoßungsrisiko. Sterile Anwendung."
+
+msgid "PRP ile ilgili tüm sorularınızı yanıtlayalım"
+msgstr "Wir beantworten alle Ihre Fragen zu PRP"
+
+# About
+msgid "Estetik ve Plastik Cerrahi Uzmanı"
+msgstr "Facharzt für Ästhetische und Plastische Chirurgie"
+
+msgid "Mesleki Deneyimim"
+msgstr "Meine berufliche Erfahrung"
+
+msgid "Eğitim"
+msgstr "Ausbildung"
+
+msgid "Tıp Fakültesi"
+msgstr "Medizinstudium"
+
+msgid "Plastik ve Rekonstrüktif Cerrahi Uzmanlığı"
+msgstr "Facharzttitel Plastische und Rekonstruktive Chirurgie"
+
+msgid "Mesleki Deneyim"
+msgstr "Berufserfahrung"
+
+# Service pages (common)
+msgid "Doğal ve Estetik Burun Cerrahisi"
+msgstr "Natürliche und ästhetische Nasenchirurgie"
+
+msgid "15 yıllık deneyimimle, size en uygun burun şeklini oluşturuyoruz"
+msgstr "Mit 15 Jahren Erfahrung gestalten wir die für Sie passende Nasenform"
+
+msgid "Ameliyat Süresi"
+msgstr "Operationsdauer"
+
+msgid "Saat"
+msgstr "Stunden"
+
+msgid "Günübirlik"
+msgstr "Ambulant"
+
+msgid "Anestezi"
+msgstr "Anästhesie"
+
+msgid "Genel Anestezi"
+msgstr "Vollnarkose"
+
+msgid "İyileşme Süresi"
+msgstr "Heilungsdauer"
+
+msgid "Gün"
+msgstr "Tage"
+
+msgid "Randevu almak için bizimle iletişime geçin"
+msgstr "Kontaktieren Sie uns für einen Termin"
+
+msgid "7/24 Mesaj"
+msgstr "Nachricht rund um die Uhr"
+
+# Rinoplasti
+msgid "Rinoplasti Nedir?"
+msgstr "Was ist die Rhinoplastik?"
+
+msgid "Rinoplasti, burun estetiği olarak da bilinen, burnun şeklini ve işlevini iyileştirmek için yapılan cerrahi bir işlemdir."
+msgstr "Rhinoplastik ist der chirurgische Eingriff zur Verbesserung von Form und Funktion der Nase."
+
+msgid "Modern rinoplasti tekniklerinde amaç, hastanın yüz yapısına en uygun, doğal görünümlü bir burun elde etmektir. Sadece estetik kaygılarla değil, nefes alma problemlerinin çözümü için de uygulanabilir."
+msgstr "Ziel ist eine natürliche Nase, die zum Gesicht passt – ästhetisch und funktionell."
+
+msgid "Estetik Amaçlar:"
+msgstr "Ästhetische Ziele:"
+
+msgid "Burun kemiği düzeltme"
+msgstr "Nasenknochenkorrektur"
+
+msgid "Burun ucunu şekillendirme"
+msgstr "Nasenspitzenformung"
+
+msgid "Burun deliklerini düzenleme"
+msgstr "Nasenlöcher anpassen"
+
+msgid "Genel burun oranlarını iyileştirme"
+msgstr "Nasenproportionen verbessern"
+
+msgid "Fonksiyonel Amaçlar:"
+msgstr "Funktionelle Ziele:"
+
+msgid "Nefes alma zorluğu giderme"
+msgstr "Bessere Atmung"
+
+msgid "Septum deviasyonu düzeltme"
+msgstr "Septumkorrektur"
+
+msgid "Burun tıkanıklığı çözme"
+msgstr "Nasenatmung verbessern"
+
+msgid "Horlama problemini azaltma"
+msgstr "Schnarchen reduzieren"
+
+msgid "Rinoplasti Süreci"
+msgstr "Ablauf Rhinoplastik"
+
+msgid "Ameliyat öncesinden iyileşme sürecine kadar"
+msgstr "Von der Vorbereitung bis zur Heilung"
+
+msgid "Konsültasyon"
+msgstr "Beratung"
+
+msgid "Detaylı muayene ve 3D simülasyon ile ameliyat planlaması yapılır. Beklentileriniz ve tıbbi durumunuz değerlendirilir."
+msgstr "Ausführliche Untersuchung und 3D-Simulation. Ihre Wünsche und Ihr Gesundheitszustand werden besprochen."
+
+msgid "Ameliyat Öncesi"
+msgstr "Vor der Operation"
+
+msgid "Gerekli tetkikler yapılır. Ameliyat günü ve sonrasına dair detaylı bilgilendirme alırsınız."
+msgstr "Nötige Untersuchungen. Ausführliche Informationen zu OP-Tag und Nachsorge."
+
+msgid "1-2 saat süren ameliyat genel anestezi altında gerçekleştirilir. Modern kapalı teknik kullanılır."
+msgstr "1-2 Stunden unter Vollnarkose. Moderne geschlossene Technik."
+
+msgid "İyileşme"
+msgstr "Heilung"
+
+msgid "7-10 gün burun teli ile koruma. Düzenli kontroller ile iyileşme süreci takip edilir."
+msgstr "7-10 Tage Nasenschiene. Regelmäßige Kontrollen."
+
+msgid "Sonuç"
+msgstr "Ergebnis"
+
+msgid "3-6 ayda şekil oturur, 1 yılda final sonuç elde edilir. Yaşam boyu garanti verilir."
+msgstr "Form in 3-6 Monaten, Endergebnis nach ca. 1 Jahr. Lebenslange Garantie."
+
+msgid "Takip"
+msgstr "Nachsorge"
+
+msgid "Düzenli kontroller ile iyileşme süreci izlenir. 7/24 iletişim desteği sağlanır."
+msgstr "Regelmäßige Kontrollen. 24/7 Ansprechpartner."
+
+msgid "Neden Rinoplasti?"
+msgstr "Warum Rhinoplastik?"
+
+msgid "Rinoplasti sadece estetik bir işlem değil, aynı zamanda işlevsel sorunları da çözen kapsamlı bir cerrahi müdahaledir."
+msgstr "Rhinoplastik verbessert Ästhetik und Funktion."
+
+msgid "Estetik İyileştirme"
+msgstr "Ästhetische Verbesserung"
+
+msgid "Yüz ile uyumlu, doğal görünümlü burun şekli"
+msgstr "Natürliche Nase im Einklang mit dem Gesicht"
+
+msgid "Nefes Alma"
+msgstr "Atmung"
+
+msgid "Septum deviasyonu ve burun tıkanıklığı çözümü"
+msgstr "Septum und Nasenatmung"
+
+msgid "Özgüven"
+msgstr "Selbstbewusstsein"
+
+msgid "Kişisel memnuniyet ve sosyal güven artışı"
+msgstr "Mehr Zufriedenheit und Sicherheit"
+
+msgid "Kalıcı Sonuç"
+msgstr "Dauerhaftes Ergebnis"
+
+msgid "Yaşam boyu sürecek doğal ve estetik görünüm"
+msgstr "Natürliches, ästhetisches Ergebnis für Jahre"
+
+msgid "Rinoplasti hakkında merak ettikleriniz"
+msgstr "Wissenswertes zur Rhinoplastik"
+
+msgid "Rinoplasti ameliyatı ağrılı mıdır?"
+msgstr "Ist die Rhinoplastik schmerzhaft?"
+
+msgid "Rinoplasti ameliyatı genel anestezi altında yapıldığı için ameliyat sırasında hiçbir ağrı hissetmezsiniz. Ameliyat sonrası ağrı çok minimal düzeydedir ve verilen ağrı kesicilerle rahatça kontrol edilebilir."
+msgstr "Keine Schmerzen während der OP unter Narkose. Danach minimal, mit Schmerzmitteln gut beherrschbar."
+
+msgid "Ne zaman normal hayatıma dönebilirim?"
+msgstr "Wann kann ich wieder normal leben?"
+
+msgid "Ofis işi yapıyorsanız 7-10 gün sonra işinize dönebilirsiniz. Ağır spor ve fiziksel aktiviteler için 6-8 hafta beklemeniz gerekir. Sosyal aktivitelere 2 hafta sonra katılabilirsiniz."
+msgstr "Büroarbeit nach 7-10 Tagen. Schwerer Sport nach 6-8 Wochen. Soziale Aktivitäten nach 2 Wochen."
+
+msgid "Sonuç ne zaman tam olarak belli olur?"
+msgstr "Wann ist das Endergebnis sichtbar?"
+
+msgid "Burnunuzun genel şekli 3-6 ay içerisinde oturur. Ancak final sonucun elde edilmesi 1 yıl kadar sürer. Bu süre boyunca düzenli kontrollerle iyileşme süreci takip edilir."
+msgstr "Form in 3-6 Monaten. Endresultat nach ca. 1 Jahr. Regelmäßige Kontrollen."
+
+msgid "Rinoplasti ameliyatının riskleri nelerdir?"
+msgstr "Welche Risiken hat die Rhinoplastik?"
+
+msgid "Deneyimli bir cerrah tarafından yapıldığında rinoplasti çok güvenli bir ameliyattır. Nadir görülen riskler arasında enfeksiyon, kanama ve anestezi riskleri bulunur. Tüm riskler ameliyat öncesi detaylı olarak anlatılır."
+msgstr "Bei erfahrenem Chirurgen sehr sicher. Seltene Risiken: Infektion, Blutung, Narkose. Alles wird vorher besprochen."
+
+msgid "Fiyat nedir ve ne kadar sürer?"
+msgstr "Kosten und Dauer?"
+
+msgid "Rinoplasti fiyatları kişinin ihtiyacına göre değişir. Detaylı fiyat bilgisi için ücretsiz konsültasyon randevusu alabilirsiniz. Ameliyat süresi ortalama 1-2 saattir."
+msgstr "Kosten je nach Bedarf. Kostenlose Beratung für detaillierte Preise. OP-Dauer ca. 1-2 Stunden."
+
+msgid "Rinoplasti ile ilgili tüm sorularınızı yanıtlayalım"
+msgstr "Wir beantworten alle Ihre Fragen zur Rhinoplastik"
+
+# Botoks
+msgid "Kırışıklık Giderme ve Yüz Gençleştirme"
+msgstr "Faltenbehandlung und Gesichtsverjüngung"
+
+msgid "Modern botulinum toksin uygulaması ile doğal ve genç görünüm"
+msgstr "Natürlicher, jugendlicher Look mit modernem Botulinumtoxin"
+
+msgid "Etkili Olma Süresi"
+msgstr "Wirkungseintritt"
+
+msgid "Botoks Nedir?"
+msgstr "Was ist Botox?"
+
+msgid "Botoks, botulinum toksin adı verilen doğal bir proteinin güvenli ve kontrollü kullanımıyla yapılan ameliyatsız estetik uygulamadır."
+msgstr "Botox ist eine nicht-chirurgische Ästhetikbehandlung mit Botulinumtoxin."
+
+msgid "Yüz kaslarının geçici olarak gevşetilmesi ile oluşan kırışıklıkların azaltılması veya tamamen ortadan kaldırılması amaçlanır. Bu işlem minimal invaziv olup, günlük hayatı etkilemez."
+msgstr "Vorübergehende Entspannung der Gesichtsmuskulatur reduziert oder beseitigt Falten. Minimal invasiv, Alltag kaum eingeschränkt."
+
+msgid "Alın kırışıklıkları"
+msgstr "Stirnfalten"
+
+msgid "Göz çevresi (kaz ayağı)"
+msgstr "Krähenfüße"
+
+msgid "Kaş arası çizgileri"
+msgstr "Zornesfalte"
+
+msgid "Boyun bantları"
+msgstr "Halsbänder"
+
+msgid "Ek Faydaları:"
+msgstr "Zusätzliche Vorteile:"
+
+msgid "Aşırı terleme tedavisi"
+msgstr "Schweißbehandlung"
+
+msgid "Migren tedavisi"
+msgstr "Migränebehandlung"
+
+msgid "Kaş kaldırma etkisi"
+msgstr "Lifting-Effekt der Braue"
+
+msgid "Çene sıkma tedavisi"
+msgstr "Kieferverspannung"
+
+msgid "Botoks Uygulama Süreci"
+msgstr "Botox-Ablauf"
+
+msgid "Konsültasyondan sonuç alana kadar"
+msgstr "Von der Beratung bis zum Ergebnis"
+
+msgid "Yüz analizi yapılır ve tedavi planı belirlenir. Beklentiler ve uygulama alanları değerlendirilir."
+msgstr "Gesichtsanalyse und Behandlungsplan. Wünsche und Behandlungszonen."
+
+msgid "Uygulama Öncesi Hazırlık"
+msgstr "Vorbereitung"
+
+msgid "Cilt temizlenir ve gerekirse topikal anestezi uygulanır. Enjeksiyon noktaları işaretlenir."
+msgstr "Hautreinigung, ggf. Betäubungscreme. Injektionspunkte werden markiert."
+
+msgid "Botoks Uygulaması"
+msgstr "Botox-Anwendung"
+
+msgid "15-30 dakika süren uygulama. İnce iğnelerle hassas noktalara enjeksiyon yapılır."
+msgstr "15-30 Minuten. Feine Nadeln, präzise Injektion."
+
+msgid "Uygulama Sonrası"
+msgstr "Nach der Anwendung"
+
+msgid "Hemen günlük hayata dönebilirsiniz. 4-6 saat boyunca yatmaktan kaçının."
+msgstr "Sofort wieder im Alltag. 4-6 Stunden nicht hinlegen."
+
+msgid "Etkinin Başlaması"
+msgstr "Wirkungseintritt"
+
+msgid "3-7 gün içinde etki görülmeye başlar. 10-14 günde maksimum etki elde edilir."
+msgstr "Wirkung ab 3-7 Tagen. Maximum nach 10-14 Tagen."
+
+msgid "Takip ve Yenileme"
+msgstr "Nachsorge und Auffrischung"
+
+msgid "Etki 4-6 ay sürer. Düzenli uygulamalarla kalıcı genç görünüm sağlanır."
+msgstr "Wirkung 4-6 Monate. Regelmäßige Anwendung erhält den Effekt."
+
+msgid "Neden Botoks?"
+msgstr "Warum Botox?"
+
+msgid "Botoks, en güvenli ve etkili ameliyatsız gençleşme yöntemidir. Hızlı uygulama, minimal yan etki ve doğal sonuçlar sunar."
+msgstr "Botox ist eine der sichersten und wirksamsten Methoden ohne OP. Schnell, wenig Nebenwirkungen, natürliches Ergebnis."
+
+msgid "Hızlı Sonuç"
+msgstr "Schnelles Ergebnis"
+
+msgid "3-7 gün içinde görünür iyileşme"
+msgstr "Sichtbare Besserung in 3-7 Tagen"
+
+msgid "Doğal Görünüm"
+msgstr "Natürliches Aussehen"
+
+msgid "Abartısız, doğal gençlik etkisi"
+msgstr "Unaufdringliche Verjüngung"
+
+msgid "Güvenli Uygulama"
+msgstr "Sichere Anwendung"
+
+msgid "FDA onaylı, güvenli prosedür"
+msgstr "FDA-zugelassen, sicheres Verfahren"
+
+msgid "Pratik Uygulama"
+msgstr "Praktisch"
+
+msgid "Öğle arası yapılabilir"
+msgstr "In der Mittagspause möglich"
+
+msgid "Botoks hakkında merak ettikleriniz"
+msgstr "Wissenswertes zu Botox"
+
+msgid "Botoks uygulaması ağrılı mıdır?"
+msgstr "Ist Botox schmerzhaft?"
+
+msgid "Botoks uygulaması çok minimal ağrı yapar. İnce iğneler kullanılır ve işlem çok kısa sürer. Gerekirse topikal anestezi kremi uygulanabilir."
+msgstr "Minimal unangenehm. Feine Nadeln, kurze Dauer. Betäubungscreme auf Wunsch."
+
+msgid "Botoks etkisi ne kadar sürer?"
+msgstr "Wie lange hält Botox?"
+
+msgid "Botoks etkisi genellikle 4-6 ay sürer. Düzenli uygulama yapıldığında bu süre uzayabilir ve daha az sıklıkta uygulama gerekebilir."
+msgstr "In der Regel 4-6 Monate. Bei regelmäßiger Anwendung oft länger."
+
+msgid "Botoks güvenli midir?"
+msgstr "Ist Botox sicher?"
+
+msgid "Evet, botoks FDA onaylı güvenli bir uygulamadır. 30 yılı aşkın süredir kullanılmaktadır. Deneyimli hekim tarafından uygulandığında çok güvenlidir."
+msgstr "Ja, Botox ist FDA-zugelassen und seit über 30 Jahren im Einsatz. Bei erfahrenem Arzt sehr sicher."
+
+msgid "Botoks sonrası ne zaman normal hayatıma dönebilirim?"
+msgstr "Wann kann ich nach Botox wieder normal leben?"
+
+msgid "Botoks sonrası hemen normal hayatınıza dönebilirsiniz. Sadece 4-6 saat boyunca yatmaktan kaçınmanız ve aşırı fiziksel aktivite yapmamanız önerilir."
+msgstr "Sofort. 4-6 Stunden nicht hinlegen, keine starke körperliche Anstrengung."
+
+msgid "Hangi yaşta botoks yapılabilir?"
+msgstr "In welchem Alter ist Botox möglich?"
+
+msgid "Botoks genellikle 25 yaş üstü kişilere uygulanır. Önemli olan kırışıklığın varlığı ve kişinin ihtiyacıdır. Yaş sınırından çok, doğru endikasyon önemlidir."
+msgstr "Üblicherweise ab 25. Entscheidend sind Falten und individueller Bedarf."
+
+msgid "Botoks ile ilgili tüm sorularınızı yanıtlayalım"
+msgstr "Wir beantworten alle Ihre Fragen zu Botox"
+
+# Dolgu
+msgid "Dolgu Uygulamaları"
+msgstr "Filler-Behandlungen"
+
+msgid "Hacim ve Kontur Düzeltmeleri"
+msgstr "Volumen und Kontur"
+
+msgid "Hyaluronik asit ile doğal hacim kazandırma ve şekillendirme"
+msgstr "Natürliches Volumen und Kontur mit Hyaluronsäure"
+
+msgid "Etki Süresi"
+msgstr "Wirkdauer"
+
+msgid "Ay"
+msgstr "Monate"
+
+msgid "Dolgu Uygulamaları Nedir?"
+msgstr "Was sind Filler?"
+
+msgid "Dolgu uygulamaları, hyaluronik asit gibi güvenli maddelerle yüzün çeşitli bölgelerine hacim kazandırma, şekillendirme ve yaşlanma belirtilerini azaltma işlemidir."
+msgstr "Filler geben mit Hyaluronsäure Volumen, formen und mildern Zeichen der Hautalterung."
+
+msgid "Bu uygulamalar sayesinde dudaklar dolgunlaştırılabilir, yanak kontuları belirginleştirilebilir, çene hatları şekillendirilebilir ve çeşitli yaşlanma çizgileri doldurulabilir. Sonuçlar anında görülür ve doğal görünür."
+msgstr "Lippen, Wangen, Kinn – sofort sichtbar, natürlich."
+
+msgid "Dudak dolgusu"
+msgstr "Lippenfüller"
+
+msgid "Yanak dolgusu"
+msgstr "Wangenfüller"
+
+msgid "Çene konturlama"
+msgstr "Kinnkontur"
+
+msgid "Burun dolgusu"
+msgstr "Nasenfüller"
+
+msgid "Dolgu Türleri:"
+msgstr "Filler-Typen:"
+
+msgid "Kalsiyum hidroksiapatit"
+msgstr "Kalziumhydroxylapatit"
+
+msgid "Kendi yağı (lipofilling)"
+msgstr "Eigenfett (Lipofilling)"
+
+msgid "Dolgu Uygulama Süreci"
+msgstr "Filler-Ablauf"
+
+msgid "Yüz analizi yapılır ve uygun dolgu türü belirlenir. Beklentiler ve uygulama planı değerlendirilir."
+msgstr "Gesichtsanalyse und Filler-Wahl. Wünsche und Plan."
+
+msgid "Cilt temizlenir ve topikal anestezi uygulanır. Enjeksiyon noktaları işaretlenir."
+msgstr "Hautreinigung, Betäubung. Injektionspunkte markiert."
+
+msgid "Dolgu Uygulaması"
+msgstr "Filler-Anwendung"
+
+msgid "20-45 dakika süren uygulama. Hassas tekniklerle doğal görünüm elde edilir."
+msgstr "20-45 Min. Präzise Technik, natürliches Ergebnis."
+
+msgid "Hafif ödem ve kızarıklık normal. Sonuç anında görülür ve günlük hayata dönülür."
+msgstr "Leichte Schwellung/Rötung normal. Sofort sichtbar, Alltag möglich."
+
+msgid "İyileşme ve Şekillenme"
+msgstr "Heilung und Formung"
+
+msgid "1-2 hafta içinde ödem geçer ve final şekil alır. Doğal görünüm elde edilir."
+msgstr "Schwellung in 1-2 Wochen weg. Natürliche Form."
+
+msgid "Etki 9-18 ay sürer. Düzenli kontroller ve gerekirse yenileme uygulaması yapılır."
+msgstr "Wirkung 9-18 Monate. Kontrollen und ggf. Auffrischung."
+
+msgid "Neden Dolgu Uygulaması?"
+msgstr "Warum Filler?"
+
+msgid "Dolgu uygulamaları güvenli, etkili ve anında sonuç veren ameliyatsız estetik çözümlerdir. Doğal görünüm elde etmenin en pratik yoludur."
+msgstr "Filler sind sichere, wirksame Lösungen ohne OP mit sofortigem Ergebnis."
+
+msgid "Anında Sonuç"
+msgstr "Sofortiges Ergebnis"
+
+msgid "Uygulama sonrası hemen görünür etki"
+msgstr "Sofort sichtbar"
+
+msgid "Abartısız, doğal hacim artışı"
+msgstr "Unaufdringliches Volumen"
+
+msgid "Güvenli Maddeler"
+msgstr "Sichere Substanzen"
+
+msgid "FDA onaylı, biyouyumlu dolgu"
+msgstr "FDA-zugelassen, biokompatibel"
+
+msgid "Geri Dönüşümlü"
+msgstr "Umkehrbar"
+
+msgid "İstenirse hyaluronidaz ile çözülebilir"
+msgstr "Mit Hyaluronidase auflösbar"
+
+msgid "Dolgu uygulamaları hakkında merak ettikleriniz"
+msgstr "Wissenswertes zu Fillern"
+
+msgid "Dolgu uygulaması ağrılı mıdır?"
+msgstr "Sind Filler schmerzhaft?"
+
+msgid "Dolgu uygulaması minimal ağrı yapar. Topikal anestezi kremi kullanılır ve çoğu dolgu içinde lidokain bulunur. İşlem sırasında sadece hafif rahatsızlık hissedilir."
+msgstr "Minimal. Betäubungscreme und Lidokain im Filler. Leichtes Unbehagen."
+
+msgid "Dolgu etkisi ne kadar sürer?"
+msgstr "Wie lange halten Filler?"
+
+msgid "Hyaluronik asit dolgular genellikle 9-18 ay arası etkili kalır. Bu süre uygulanan bölge, kişinin metabolizması ve yaşam tarzına göre değişebilir."
+msgstr "HA-Filler meist 9-18 Monate. Abhängig von Zone, Stoffwechsel und Lebensstil."
+
+msgid "Dolgu güvenli midir?"
+msgstr "Sind Filler sicher?"
+
+msgid "Evet, FDA onaylı hyaluronik asit dolgular çok güvenlidir. Vücutta doğal olarak bulunan bir madde olduğu için yan etki riski minimumdur."
+msgstr "Ja, FDA-zugelassene HA-Filler sind sehr sicher. HA kommt natürlich im Körper vor."
+
+msgid "Dolgu beğenmezsem ne olur?"
+msgstr "Was, wenn mir das Ergebnis nicht gefällt?"
+
+msgid "Hyaluronik asit dolgular hyaluronidaz enzimi ile çözülebilir. Bu da dolgu uygulamasını geri dönüşümlü hale getirir. İstenmeyen sonuçlar düzeltilebilir."
+msgstr "HA-Filler sind mit Hyaluronidase auflösbar. Ergebnis ist korrigierbar."
+
+msgid "Dolgu sonrası ne zaman normale dönerim?"
+msgstr "Wann bin ich nach Fillern wieder normal?"
+
+msgid "Dolgu sonrası hemen normal hayatınıza dönebilirsiniz. Hafif ödem ve kızarıklık 1-2 gün içinde geçer. Sadece aşırı sıcaktan kaçınmanız önerilir."
+msgstr "Sofort. Leichte Schwellung 1-2 Tage. Starke Hitze meiden."
+
+msgid "Dolgu ile ilgili tüm sorularınızı yanıtlayalım"
+msgstr "Wir beantworten alle Ihre Fragen zu Fillern"
+
+# Mezoterapi
+msgid "Cilt Yenileme ve Vitamin Tedavisi"
+msgstr "Hauterneuerung und Vitaminbehandlung"
+
+msgid "Vitamin, mineral ve aktif maddelerle cilt gençleştirme"
+msgstr "Hautverjüngung mit Vitaminen, Mineralien und Wirkstoffen"
+
+msgid "Mezoterapi Nedir?"
+msgstr "Was ist Mesotherapie?"
+
+msgid "Mezoterapi, cildin orta tabakasına (mezoderm) vitamin, mineral, antioksidan ve aktif maddeler enjekte edilerek yapılan cilt gençleştirme tedavisidir."
+msgstr "Mesotherapie ist Hautverjüngung durch Injektion von Vitaminen, Mineralien und Wirkstoffen in die mittlere Hautschicht."
+
+msgid "Bu tedavi ile cildin nem düzeyi artar, kolajen üretimi hızlanır, cilt tonu eşitlenir ve genel cilt kalitesi iyileşir. Yüz, boyun, dekolte ve el bölgelerine uygulanabilir."
+msgstr "Mehr Feuchtigkeit, mehr Kollagen, gleichmäßiger Teint. Für Gesicht, Hals, Dekolleté, Hände."
+
+msgid "Yüz ve boyun"
+msgstr "Gesicht und Hals"
+
+msgid "İçerik Maddeleri:"
+msgstr "Inhaltsstoffe:"
+
+msgid "Vitamin C, E, A"
+msgstr "Vitamin C, E, A"
+
+msgid "Amino asitler"
+msgstr "Aminosäuren"
+
+msgid "Antioksidanlar"
+msgstr "Antioxidantien"
+
+msgid "Mezoterapi Uygulama Süreci"
+msgstr "Mesotherapie-Ablauf"
+
+msgid "Cilt analizi yapılır ve uygun mezoterapi karışımı belirlenir. Cilt ihtiyaçları ve tedavi planı değerlendirilir."
+msgstr "Hautanalyse und Mischung. Bedarf und Behandlungsplan."
+
+msgid "Cilt temizlenir ve gerekirse topikal anestezi uygulanır. Steril koşullar sağlanır."
+msgstr "Hautreinigung, ggf. Betäubung. Sterile Bedingungen."
+
+msgid "Mezoterapi Uygulaması"
+msgstr "Mesotherapie-Anwendung"
+
+msgid "15-30 dakika süren uygulama. İnce iğnelerle vitamin karışımı cilt altına enjekte edilir."
+msgstr "15-30 Min. Feine Nadeln, Vitaminmischung in die Haut."
+
+msgid "Hafif kızarıklık normal. Nemlendirici uygulanır ve günlük hayata hemen dönülür."
+msgstr "Leichte Rötung normal. Pflege, sofort Alltag."
+
+msgid "Seans Tekrarları"
+msgstr "Sitzungsabstände"
+
+msgid "2 hafta arayla 4-6 seans uygulanır. Her seansta cilt kalitesi iyileşir."
+msgstr "4-6 Sitzungen alle 2 Wochen. Hautqualität verbessert sich."
+
+msgid "6 ayda bir hatırlatma seansları ile cilt kalitesi korunur ve geliştirilir."
+msgstr "Auffrischung alle 6 Monate erhält und verbessert die Haut."
+
+msgid "Neden Mezoterapi?"
+msgstr "Warum Mesotherapie?"
+
+msgid "Mezoterapi doğal yollarla cilt kalitesini artıran, güvenli ve etkili bir tedavi yöntemidir. Vitamin ve mineraller ile cildi besler."
+msgstr "Mesotherapie verbessert die Haut natürlich, sicher und wirksam mit Vitaminen und Mineralien."
+
+msgid "Doğal Gençleşme"
+msgstr "Natürliche Verjüngung"
+
+msgid "Vitamin ve minerallerle doğal yenilenme"
+msgstr "Natürliche Erneuerung mit Vitaminen und Mineralien"
+
+msgid "Nem Artışı"
+msgstr "Mehr Feuchtigkeit"
+
+msgid "Cildin nem düzeyi ve elastikiyeti artar"
+msgstr "Mehr Feuchtigkeit und Elastizität"
+
+msgid "Ton Eşitlenmesi"
+msgstr "Gleichmäßiger Teint"
+
+msgid "Cilt tonunda homojenlik sağlanır"
+msgstr "Homogener Hautton"
+
+msgid "Doğal maddeler, minimal yan etki"
+msgstr "Natürliche Stoffe, wenig Nebenwirkungen"
+
+msgid "Mezoterapi hakkında merak ettikleriniz"
+msgstr "Wissenswertes zur Mesotherapie"
+
+msgid "Mezoterapi ağrılı mıdır?"
+msgstr "Ist Mesotherapie schmerzhaft?"
+
+msgid "Mezoterapi çok ince iğnelerle yapılır. Hafif batma hissi olabilir, topikal anestezi ile minimal düzeyde tutulur."
+msgstr "Sehr feine Nadeln. Leichtes Stechen, mit Betäubung minimal."
+
+msgid "Kaç seans gerekir?"
+msgstr "Wie viele Sitzungen?"
+
+msgid "Genellikle 4-6 seans önerilir. Seanslar 2 hafta arayla yapılır. Sonuçlar 2-3 seanstan itibaren görülmeye başlar."
+msgstr "Üblich 4-6 Sitzungen alle 2 Wochen. Erste Ergebnisse ab 2-3. Sitzung."
+
+msgid "Mezoterapi etkisi ne kadar sürer?"
+msgstr "Wie lange hält Mesotherapie?"
+
+msgid "Düzenli seanslarla cilt kalitesi kalıcı olarak iyileşir. 6 ayda bir hatırlatma seansı önerilir."
+msgstr "Regelmäßige Sitzungen verbessern dauerhaft. Auffrischung alle 6 Monate."
+
+msgid "Mezoterapi ile ilgili tüm sorularınızı yanıtlayalım"
+msgstr "Wir beantworten alle Ihre Fragen zur Mesotherapie"
+
+# Meme, Yüz, Vücut, Jinekomasti, Fransız Askısı, Medya, About - ortak/kısa DE
+msgid "Doğal ve Estetik Meme Cerrahisi"
+msgstr "Natürliche und ästhetische Brustchirurgie"
+
+msgid "Kişiye özel yaklaşımla ideal meme formunu oluşturuyoruz"
+msgstr "Individueller Ansatz für Ihre ideale Brustform"
+
+msgid "Gece"
+msgstr "Nacht/Nächte"
+
+msgid "Hafta"
+msgstr "Woche(n)"
+
+msgid "Meme Estetiği Nedir?"
+msgstr "Was ist Brustästhetik?"
+
+msgid "Meme estetiği, kadınların meme boyutu, şekli ve simetrisini iyileştirmek için yapılan cerrahi işlemlerdir."
+msgstr "Brustästhetik verbessert Größe, Form und Symmetrie der Brust."
+
+msgid "Meme büyütme, küçültme, dikleştirme ve şekillendirme gibi farklı tekniklerle kişinin vücut yapısına en uygun, doğal ve estetik sonuçlar elde edilir."
+msgstr "Vergrößerung, Verkleinerung, Straffung – natürlich und zur Figur passend."
+
+msgid "Meme Büyütme:"
+msgstr "Brustvergrößerung:"
+
+msgid "Yağ enjeksiyonu"
+msgstr "Fettübertragung"
+
+msgid "Meme Küçültme:"
+msgstr "Brustverkleinerung:"
+
+msgid "Aşırı büyük meme tedavisi"
+msgstr "Behandlung übergroßer Brüste"
+
+msgid "Sırt ağrısı çözümü"
+msgstr "Rückenschmerzlinderung"
+
+msgid "Estetik iyileştirme"
+msgstr "Ästhetische Verbesserung"
+
+msgid "Orantılı görünüm"
+msgstr "Proportioniertes Erscheinungsbild"
+
+msgid "Meme Estetiği Süreci"
+msgstr "Ablauf Brustästhetik"
+
+msgid "3D simülasyon ile meme analizi yapılır. İstenen boyut ve şekil hakkında detaylı planlama gerçekleştirilir."
+msgstr "3D-Simulation und Brustanalyse. Detaillierte Planung."
+
+msgid "Gerekli tetkikler ve mamografi yapılır. İmplant seçimi ve ameliyat tekniği belirlenir."
+msgstr "Untersuchungen und Mammographie. Implantat- und Technikwahl."
+
+msgid "2-3 saat süren ameliyat genel anestezi altında yapılır. Minimal iz tekniği kullanılır."
+msgstr "2-3 Std. unter Narkose. Minimaler Schnitt."
+
+msgid "1-2 hafta özel sütyen kullanımı. Düzenli kontroller ile iyileşme süreci takip edilir."
+msgstr "1-2 Wochen Spezial-BH. Regelmäßige Kontrollen."
+
+msgid "Sonuç ve Şekil"
+msgstr "Ergebnis und Form"
+
+msgid "3-6 ayda final şekil alır. Doğal ve estetik görünüm elde edilir."
+msgstr "Endergebnis in 3-6 Monaten. Natürlich und ästhetisch."
+
+msgid "Yaşam Boyu Takip"
+msgstr "Lebenslange Nachsorge"
+
+msgid "Düzenli kontroller ile implant durumu izlenir. 7/24 destek hizmeti verilir."
+msgstr "Regelmäßige Kontrollen. 24/7 Support."
+
+msgid "Neden Meme Estetiği?"
+msgstr "Warum Brustästhetik?"
+
+msgid "Meme estetiği, kadınların kendilerini daha güzel ve özgüvenli hissetmelerini sağlayan önemli bir cerrahi dalıdır."
+msgstr "Brustästhetik steigert Wohlbefinden und Selbstbewusstsein."
+
+msgid "Kadınsal Güzellik"
+msgstr "Weibliche Schönheit"
+
+msgid "Doğal ve feminen görünüm"
+msgstr "Natürliches, weibliches Erscheinungsbild"
+
+msgid "Vücut Oranları"
+msgstr "Körperproportionen"
+
+msgid "İdeal vücut proporsiyonu"
+msgstr "Ideale Körperproportion"
+
+msgid "Özgüven Artışı"
+msgstr "Mehr Selbstbewusstsein"
+
+msgid "Kişisel memnuniyet ve mutluluk"
+msgstr "Zufriedenheit und Wohlbefinden"
+
+msgid "Kıyafet Seçimi"
+msgstr "Kleidungswahl"
+
+msgid "Daha rahat giyim seçenekleri"
+msgstr "Mehr Kleidungsoptionen"
+
+msgid "Meme estetiği hakkında merak ettikleriniz"
+msgstr "Wissenswertes zur Brustästhetik"
+
+msgid "Meme büyütme ameliyatı ağrılı mıdır?"
+msgstr "Ist Brustvergrößerung schmerzhaft?"
+
+msgid "Ameliyat genel anestezi altında yapıldığı için hiçbir ağrı hissetmezsiniz. Ameliyat sonrası ağrı minimal düzeydedir ve verilen ağrı kesicilerle kontrol edilir."
+msgstr "Keine Schmerzen unter Narkose. Danach minimal, mit Schmerzmitteln beherrschbar."
+
+msgid "İmplantlar ne kadar süre dayanır?"
+msgstr "Wie lange halten Implantate?"
+
+msgid "Modern silikon implantlar 15-20 yıl veya daha uzun süre kullanılabilir. Düzenli kontrollerle implant durumu takip edilir."
+msgstr "Moderne Silikonimplantate 15-20+ Jahre. Regelmäßige Kontrolle."
+
+msgid "Emzirme üzerinde etkisi var mı?"
+msgstr "Beeinflusst es das Stillen?"
+
+msgid "Doğru teknikle yapılan meme büyütme ameliyatı emzirmeyi etkilemez. Meme dokusuna zarar verilmeden işlem gerçekleştirilir."
+msgstr "Richtig durchgeführt beeinträchtigt es das Stillen nicht."
+
+msgid "Ameliyat izleri görünür olur mu?"
+msgstr "Sind Narben sichtbar?"
+
+msgid "İzler meme altı kıvrımında veya meme başı çevresinde gizlenir. 6-12 ay içinde izler neredeyse görünmez hale gelir."
+msgstr "Narben in Brustfalte oder um die Brustwarze. Nach 6-12 Monaten kaum sichtbar."
+
+msgid "Ne zaman spor yapabilirim?"
+msgstr "Wann darf ich wieder Sport machen?"
+
+msgid "Hafif aktivitelere 2 hafta sonra, ağır spora 6-8 hafta sonra başlayabilirsiniz. Yüzme gibi aktiviteler için 4-6 hafta beklemeniz gerekir."
+msgstr "Leicht nach 2 Wochen, intensiv nach 6-8 Wochen. Schwimmen nach 4-6 Wochen."
+
+msgid "Meme estetiği ile ilgili tüm sorularınızı yanıtlayalım"
+msgstr "Wir beantworten alle Ihre Fragen zur Brustästhetik"
+
+msgid "Doğal ve Genç Görünüm İçin Face Lift"
+msgstr "Facelift für natürliche, jugendliche Optik"
+
+msgid "Modern tekniklerle yaşlanma belirtilerini ortadan kaldırıyoruz"
+msgstr "Zeichen der Hautalterung mit modernen Methoden mindern"
+
+msgid "Yüz Estetiği Nedir?"
+msgstr "Was ist Gesichtsästhetik?"
+
+msgid "Yüz estetiği (face lift), yüzdeki yaşlanma belirtilerini gidermek ve genç görünümü yeniden kazandırmak için yapılan cerrahi işlemlerdir."
+msgstr "Facelift korrigiert Zeichen der Hautalterung für einen jugendlicheren Look."
+
+msgid "Yaşla birlikte yüz derisinde oluşan sarkma, kırışıklık ve hacim kaybı gibi sorunları düzelterek doğal ve genç bir görünüm elde edilir. Modern yüz estetiği teknikleri minimal iz bırakır ve doğal sonuçlar verir."
+msgstr "Erschlaffung, Falten und Volumenverlust werden korrigiert. Moderne Technik, wenig Narben."
+
+msgid "Tedavi Edilen Bölgeler:"
+msgstr "Behandelte Bereiche:"
+
+msgid "Alın ve kaş bölgesi"
+msgstr "Stirn und Braue"
+
+msgid "Göz çevresi ve kapaklar"
+msgstr "Augenbereich und Lider"
+
+msgid "Orta yüz bölgesi"
+msgstr "Mittelgesicht"
+
+msgid "Boyun ve çene altı"
+msgstr "Hals und Kinn"
+
+msgid "Düzeltilen Sorunlar:"
+msgstr "Behobene Probleme:"
+
+msgid "Derin kırışıklıklar"
+msgstr "Tiefe Falten"
+
+msgid "Cilt sarkması"
+msgstr "Hauterschlaffung"
+
+msgid "Hacim kaybı"
+msgstr "Volumenverlust"
+
+msgid "Boyun sarkması"
+msgstr "Halserschlaffung"
+
+msgid "Yüz Estetiği Süreci"
+msgstr "Ablauf Gesichtsästhetik"
+
+msgid "Yüz analizi ve 3D simülasyon ile kişiye özel ameliyat planı hazırlanır. Beklentiler ve uygun teknikler değerlendirilir."
+msgstr "Gesichtsanalyse und 3D. Individueller OP-Plan. Wünsche und Techniken."
+
+msgid "Gerekli tetkikler yapılır. Ameliyat günü ve sonrası için detaylı bilgilendirme ve hazırlık talimatları verilir."
+msgstr "Untersuchungen. Detaillierte Infos und Vorbereitung."
+
+msgid "3-5 saat süren ameliyat genel anestezi altında yapılır. Modern endoskopik teknikler kullanılır."
+msgstr "3-5 Std. unter Narkose. Moderne endoskopische Technik."
+
+msgid "2-3 hafta özel bakım gerekir. Düzenli kontroller ile iyileşme süreci yakından takip edilir."
+msgstr "2-3 Wochen besondere Pflege. Regelmäßige Kontrollen."
+
+msgid "Sonuç ve Bakım"
+msgstr "Ergebnis und Pflege"
+
+msgid "6 ayda net sonuç görülür, 1 yılda final şekil alır. Uzun süreli genç görünüm elde edilir."
+msgstr "Ergebnis nach 6 Monaten, Endform nach 1 Jahr. Langanhaltend."
+
+msgid "Düzenli kontroller ile sonuç kalitesi korunur. 7/24 destek ve rehberlik hizmeti verilir."
+msgstr "Kontrollen erhalten die Qualität. 24/7 Support."
+
+msgid "Neden Yüz Estetiği?"
+msgstr "Warum Gesichtsästhetik?"
+
+msgid "Yüz estetiği, yaşlanma sürecini tersine çeviren ve kendinizi en iyi hissetmenizi sağlayan kapsamlı bir gençleşme çözümüdür."
+msgstr "Gesichtsästhetik kehrt die Hautalterung um und steigert Ihr Wohlbefinden."
+
+msgid "Yaşına uygun, doğal ve çekici görünüm"
+msgstr "Altersgerecht, natürlich, ansprechend"
+
+msgid "10-15 yıl süren kalıcı sonuçlar"
+msgstr "Ergebnisse für 10-15 Jahre"
+
+msgid "Kendinizi genç ve dinamik hissetme"
+msgstr "Sich jung und dynamisch fühlen"
+
+msgid "Minimal İz"
+msgstr "Minimale Narben"
+
+msgid "Saç içi ve doğal kıvrımlarda gizli kesiler"
+msgstr "Schnitte in Haaransatz und natürlichen Falten"
+
+msgid "Yüz estetiği hakkında merak ettikleriniz"
+msgstr "Wissenswertes zur Gesichtsästhetik"
+
+msgid "Yüz estetiği ağrılı bir işlem midir?"
+msgstr "Ist Gesichtsästhetik schmerzhaft?"
+
+msgid "Ameliyat genel anestezi altında yapıldığı için hiçbir ağrı hissetmezsiniz. Ameliyat sonrası ağrı minimal düzeydedir ve güçlü ağrı kesicilerle kontrol edilir."
+msgstr "Keine Schmerzen unter Narkose. Danach minimal, mit Schmerzmitteln."
+
+msgid "Ne zaman normal aktivitelerime dönebilirim?"
+msgstr "Wann kann ich wieder normal aktiv sein?"
+
+msgid "Hafif aktivitelere 1 hafta sonra, iş hayatına 2-3 hafta sonra dönebilirsiniz. Ağır spor ve fiziksel aktiviteler için 6-8 hafta beklemeniz gerekir."
+msgstr "Leicht nach 1 Woche, Arbeit nach 2-3 Wochen. Sport nach 6-8 Wochen."
+
+msgid "Yüz estetiği sonuçları ne kadar sürer?"
+msgstr "Wie lange halten die Ergebnisse?"
+
+msgid "Yüz estetiği sonuçları genellikle 10-15 yıl sürer. Bu süre kişinin yaşam tarzı, cilt kalitesi ve yaşlanma hızına göre değişebilir."
+msgstr "In der Regel 10-15 Jahre. Abhängig von Lebensstil und Haut."
+
+msgid "Modern tekniklerle izler saç içinde ve kulak çevresindeki doğal kıvrımlarda gizlenir. 6-12 ay içinde izler neredeyse görünmez hale gelir."
+msgstr "Narben in Haaransatz und Ohrenfalten. Nach 6-12 Monaten kaum sichtbar."
+
+msgid "Hangi yaşta yüz estetiği yaptırabilirim?"
+msgstr "In welchem Alter ist Gesichtsästhetik möglich?"
+
+msgid "Genellikle 40-60 yaş aralığında yapılır. Ancak kişinin genetik yapısı ve yaşlanma hızına göre bu yaş değişebilir. Detaylı konsültasyon sonrası karar verilir."
+msgstr "Üblicherweise 40-60. Genetik und Hautalterung entscheiden. Nach Beratung."
+
+msgid "Yüz estetiği ile ilgili tüm sorularınızı yanıtlayalım"
+msgstr "Wir beantworten alle Ihre Fragen zur Gesichtsästhetik"
+
+msgid "İdeal Vücut Hatları İçin Body Contouring"
+msgstr "Body Contouring für ideale Körperlinien"
+
+msgid "Modern tekniklerle vücut şekillendirme ve konturlama işlemleri"
+msgstr "Körperformung mit modernen Techniken"
+
+msgid "Vücut Estetiği Nedir?"
+msgstr "Was ist Body Contouring?"
+
+msgid "Vücut estetiği, vücudun çeşitli bölgelerindeki şekil bozukluklarını düzelterek ideal vücut konturlarını elde etmeyi amaçlayan cerrahi işlemlerdir."
+msgstr "Body Contouring korrigiert Form und Kontur für ideale Körperlinien."
+
+msgid "Liposuction, karın germe, kalça-bacak germe, kol germe gibi farklı tekniklerle vücudun estetik görünümü iyileştirilir. Bu işlemler sadece estetik amaçlı değil, aynı zamanda fonksiyonel ve sağlık açısından da fayda sağlar."
+msgstr "Liposuktion, Bauchdeckenstraffung, Oberschenkel-, Armstraffung. Ästhetik und Funktion."
+
+msgid "Tedavi Bölgeleri:"
+msgstr "Behandlungszonen:"
+
+msgid "Karın bölgesi"
+msgstr "Bauch"
+
+msgid "Kalça ve bacaklar"
+msgstr "Hüfte und Oberschenkel"
+
+msgid "Kol ve koltuk altı"
+msgstr "Arme und Achseln"
+
+msgid "Sırt ve bel bölgesi"
+msgstr "Rücken und Taille"
+
+msgid "Uygulanan Teknikler:"
+msgstr "Angewendete Techniken:"
+
+msgid "Liposuction (yağ alma)"
+msgstr "Liposuktion"
+
+msgid "Tummy tuck (karın germe)"
+msgstr "Bauchdeckenstraffung"
+
+msgid "Brachioplasty (kol germe)"
+msgstr "Armstraffung"
+
+msgid "Thigh lift (bacak germe)"
+msgstr "Oberschenkelstraffung"
+
+msgid "Vücut Estetiği Süreci"
+msgstr "Ablauf Body Contouring"
+
+msgid "Vücut analizi ve 3D simülasyon ile kişiye özel ameliyat planı hazırlanır. Hangi bölgelerin tedavi edileceği belirlenir."
+msgstr "Körperanalyse und 3D. Individueller OP-Plan."
+
+msgid "Gerekli tetkikler yapılır. Ameliyat tekniği ve beklentiler detaylı olarak görüşülür."
+msgstr "Untersuchungen. Technik und Erwartungen."
+
+msgid "2-4 saat süren ameliyat genel anestezi altında yapılır. Modern liposuction ve konturlama teknikleri kullanılır."
+msgstr "2-4 Std. unter Narkose. Moderne Liposuktion und Konturierung."
+
+msgid "2-4 hafta özel korse kullanımı. Düzenli kontroller ile iyileşme süreci yakından takip edilir."
+msgstr "2-4 Wochen Kompressionskleidung. Regelmäßige Kontrollen."
+
+msgid "3-6 ayda ideal vücut konturu elde edilir. Final sonuç 1 yıl içinde tamamlanır."
+msgstr "Ideale Kontur in 3-6 Monaten. Endergebnis innerhalb 1 Jahr."
+
+msgid "Düzenli kontroller ile sonuç kalitesi korunur. Yaşam tarzı önerileri ve destek sağlanır."
+msgstr "Kontrollen und Lebensstilberatung."
+
+msgid "Neden Vücut Estetiği?"
+msgstr "Warum Body Contouring?"
+
+msgid "Vücut estetiği, sadece görünümü iyileştirmekle kalmaz, aynı zamanda kişinin yaşam kalitesini ve özgüvenini de artırır."
+msgstr "Body Contouring verbessert Aussehen, Lebensqualität und Selbstbewusstsein."
+
+msgid "İdeal Vücut Hatları"
+msgstr "Ideale Körperlinien"
+
+msgid "Orantılı ve estetik vücut konturu"
+msgstr "Proportionale, ästhetische Kontur"
+
+msgid "Hareket Kabiliyeti"
+msgstr "Beweglichkeit"
+
+msgid "Daha rahat hareket ve aktivite"
+msgstr "Mehr Komfort bei Bewegung und Aktivität"
+
+msgid "Kişisel memnuniyet ve sosyal güven"
+msgstr "Zufriedenheit und soziale Sicherheit"
+
+msgid "Daha geniş giyim seçenekleri"
+msgstr "Mehr Kleidungsoptionen"
+
+msgid "Vücut estetiği hakkında merak ettikleriniz"
+msgstr "Wissenswertes zum Body Contouring"
+
+msgid "Vücut estetiği ameliyatı ağrılı mıdır?"
+msgstr "Ist Body Contouring schmerzhaft?"
+
+msgid "Ameliyat genel anestezi altında yapıldığı için hiçbir ağrı hissetmezsiniz. Ameliyat sonrası ağrı güçlü ağrı kesicilerle kontrol edilir ve birkaç gün içinde azalır."
+msgstr "Keine Schmerzen unter Narkose. Danach mit Schmerzmitteln beherrschbar."
+
+msgid "Vücut estetiği sonuçları kalıcı mıdır?"
+msgstr "Sind die Ergebnisse dauerhaft?"
+
+msgid "Evet, sonuçlar kalıcıdır. Ancak sağlıklı yaşam tarzı sürdürmek ve ideal kiloya yakın kalmak sonuçların korunması için önemlidir."
+msgstr "Ja, bei gesundem Lebensstil und stabilem Gewicht."
+
+msgid "Modern tekniklerle izler mümkün olduğunca gizli yerlerde yapılır. 6-12 ay içinde izler büyük ölçüde soluklaşır ve fark edilmez hale gelir."
+msgstr "Narben möglichst versteckt. Nach 6-12 Monaten stark verblasst."
+
+msgid "Hangi yaşta vücut estetiği yaptırabilirim?"
+msgstr "In welchem Alter ist Body Contouring möglich?"
+
+msgid "18 yaş üstü herkes vücut estetiği yaptırabilir. En ideal yaş aralığı 25-50 yaş arası olsa da, kişinin genel sağlık durumu ve beklentileri daha önemlidir."
+msgstr "Ab 18 möglich. Ideal oft 25-50. Gesundheit und Erwartungen entscheiden."
+
+msgid "Vücut estetiği ile ilgili tüm sorularınızı yanıtlayalım"
+msgstr "Wir beantworten alle Ihre Fragen zum Body Contouring"
+
+msgid "Erkek Göğsü Estetiği ve Tedavisi"
+msgstr "Männliche Brustästhetik und Behandlung"
+
+msgid "Modern tekniklerle erkeklerde göğüs büyümesi sorununun çözümü"
+msgstr "Lösung der Männerbrust mit modernen Techniken"
+
+msgid "Genel/Lokal"
+msgstr "Allgemein/Lokal"
+
+msgid "Jinekomasti Nedir?"
+msgstr "Was ist Gynäkomastie?"
+
+msgid "Jinekomasti, erkeklerde göğüs dokusunun normalden büyük olması durumudur. Bu durum hormonal değişiklikler, yaş, ilaç kullanımı veya genetik faktörler nedeniyle oluşabilir."
+msgstr "Gynäkomastie ist vergrößertes Brustgewebe beim Mann. Hormone, Alter, Medikamente oder Genetik."
+
+msgid "Jinekomasti sadece estetik bir sorun değil, aynı zamanda erkeklerin özgüvenini olumsuz etkileyen psikolojik bir durumdur. Modern cerrahi tekniklerle bu sorun güvenli ve etkili bir şekilde çözülür."
+msgstr "Gynäkomastie betrifft Ästhetik und Selbstbewusstsein. Moderne Chirurgie löst sie sicher."
+
+msgid "Jinekomasti Türleri:"
+msgstr "Formen der Gynäkomastie:"
+
+msgid "Yalancı jinekomasti (liposuction)"
+msgstr "Pseudogynäkomastie (Liposuktion)"
+
+msgid "Gerçek jinekomasti (doku eksizyonu)"
+msgstr "Echte Gynäkomastie (Gewebeentfernung)"
+
+msgid "Karma jinekomasti"
+msgstr "Mischform"
+
+msgid "Şiddetli jinekomasti"
+msgstr "Schwere Gynäkomastie"
+
+msgid "Tedavi Yöntemleri:"
+msgstr "Behandlungsmethoden:"
+
+msgid "Doku eksizyonu"
+msgstr "Gewebeentfernung"
+
+msgid "Kombine teknik"
+msgstr "Kombinierte Technik"
+
+msgid "Minimal invaziv yöntem"
+msgstr "Minimal invasive Methode"
+
+msgid "Jinekomasti Tedavi Süreci"
+msgstr "Ablauf Gynäkomastie-Behandlung"
+
+msgid "Detaylı Muayene"
+msgstr "Ausführliche Untersuchung"
+
+msgid "Göğüs dokusu analizi ve jinekomasti tipinin belirlenmesi. Gerekirse hormonal testler yapılır."
+msgstr "Brustgewebe-Analyse und Typ. Hormontests bei Bedarf."
+
+msgid "Ameliyat Planlaması"
+msgstr "OP-Planung"
+
+msgid "Uygun tedavi yönteminin seçimi (liposuction, eksizyon veya kombine). Anestezi türü belirlenir."
+msgstr "Wahl der Methode (Liposuktion, Exzision oder kombiniert). Anästhesie."
+
+msgid "1-2 saat süren ameliyat. Minimal iz bırakan teknikler kullanılarak göğüs konturu düzeltilir."
+msgstr "1-2 Std. OP. Minimaler Schnitt, Konturkorrektur."
+
+msgid "1-2 hafta özel yelek kullanımı. Düzenli kontroller ile iyileşme süreci takip edilir."
+msgstr "1-2 Wochen Spezialweste. Regelmäßige Kontrollen."
+
+msgid "3-6 ayda ideal göğüs konturu elde edilir. Doğal ve maskülen görünüm sağlanır."
+msgstr "Ideale Kontur in 3-6 Monaten. Natürlich, männlich."
+
+msgid "Düzenli kontroller ile sonucun kalıcılığı sağlanır. 7/24 destek hizmeti verilir."
+msgstr "Kontrollen sichern Dauerhaftigkeit. 24/7 Support."
+
+msgid "Neden Jinekomasti Tedavisi?"
+msgstr "Warum Gynäkomastie-Behandlung?"
+
+msgid "Jinekomasti tedavisi sadece estetik bir düzeltme değil, aynı zamanda erkeklerin yaşam kalitesini artıran önemli bir müdahaledir."
+msgstr "Gynäkomastie-Behandlung verbessert Ästhetik und Lebensqualität."
+
+msgid "Maskülen Görünüm"
+msgstr "Männliches Erscheinungsbild"
+
+msgid "Doğal ve erkeksi göğüs konturu"
+msgstr "Natürliche, männliche Brustkontur"
+
+msgid "Sosyal hayata daha rahat katılım"
+msgstr "Unbefangener im Alltag"
+
+msgid "Kıyafet Rahatlığı"
+msgstr "Kleidungskomfort"
+
+msgid "Her türlü kıyafeti rahatça giyebilme"
+msgstr "Alle Kleidung bequem tragen"
+
+msgid "Spor ve Aktivite"
+msgstr "Sport und Aktivität"
+
+msgid "Yüzme ve spor aktivitelerinde rahatlık"
+msgstr "Schwimmen und Sport ohne Einschränkung"
+
+msgid "Jinekomasti hakkında merak ettikleriniz"
+msgstr "Wissenswertes zur Gynäkomastie"
+
+msgid "Jinekomasti ameliyatı ağrılı mıdır?"
+msgstr "Ist die Gynäkomastie-OP schmerzhaft?"
+
+msgid "Ameliyat anestezi altında yapıldığı için hiçbir ağrı hissetmezsiniz. Ameliyat sonrası hafif rahatsızlık olabilir ancak ağrı kesicilerle kolayca kontrol edilir."
+msgstr "Keine Schmerzen unter Narkose. Leichtes Unbehagen danach, mit Schmerzmitteln gut beherrschbar."
+
+msgid "Ne zaman normale dönebilirim?"
+msgstr "Wann bin ich wieder normal?"
+
+msgid "İşinize 3-5 gün sonra dönebilirsiniz. Ağır kaldırma ve spordan 4-6 hafta kaçınmanız gerekir. Yüzme gibi aktivitelere 3-4 hafta sonra başlayabilirsiniz."
+msgstr "Arbeit nach 3-5 Tagen. Heben und Sport 4-6 Wochen meiden. Schwimmen nach 3-4 Wochen."
+
+msgid "Jinekomasti tekrar oluşur mu?"
+msgstr "Kann Gynäkomastie wiederkehren?"
+
+msgid "Doğru teknikle yapılan jinekomasti ameliyatı sonrası nüks (tekrarlama) oranı çok düşüktür. Çıkarılan doku tekrar oluşmaz, ancak kilo alımında yağ birikimi olabilir."
+msgstr "Rückfallrate sehr niedrig. Entferntes Gewebe wächst nicht nach. Bei Gewichtszunahme kann Fett zunehmen."
+
+msgid "Modern tekniklerle kesiler meme başı çevresinde veya koltuk altında gizli yerlerde yapılır. 6-12 ay içinde izler neredeyse görünmez hale gelir."
+msgstr "Schnitte um Brustwarze oder in Achsel. Narben nach 6-12 Monaten kaum sichtbar."
+
+msgid "Hangi yaşta jinekomasti ameliyatı olabilirim?"
+msgstr "In welchem Alter ist die Gynäkomastie-OP möglich?"
+
+msgid "Genellikle 18 yaş üstü hastalar ameliyat olabilir. Ergenlik döneminde oluşan jinekomasti kendiliğinden geçebileceği için 18 yaşından sonra karar verilir."
+msgstr "Üblicherweise ab 18. In der Pubertät kann sich Gynäkomastie von selbst zurückbilden."
+
+msgid "Jinekomasti ile ilgili tüm sorularınızı yanıtlayalım"
+msgstr "Wir beantworten alle Ihre Fragen zur Gynäkomastie"
+
+msgid "PDO Thread Lift ile Ameliyatsız Yüz Germe"
+msgstr "Fadenlifting ohne OP"
+
+msgid "Emilir ipliklerle doğal yüz germe ve sıkılaştırma"
+msgstr "Natürliches Heben und Straffen mit resorbierbaren Fäden"
+
+msgid "Lokal Anestezi"
+msgstr "Lokalanästhesie"
+
+msgid "Fransız Askısı Nedir?"
+msgstr "Was ist das French Lift?"
+
+msgid "Fransız Askısı Uygulama Süreci"
+msgstr "Ablauf French Lift"
+
+msgid "Yüz analizi yapılır ve uygun iplik türü belirlenir. Sarkan bölgeler ve tedavi planı değerlendirilir."
+msgstr "Gesichtsanalyse und Fadenwahl. Erschlaffung und Behandlungsplan."
+
+msgid "Cilt temizlenir ve lokal anestezi uygulanır. İplik giriş noktaları işaretlenir."
+msgstr "Hautreinigung und Lokalanästhesie. Einstichpunkte markiert."
+
+msgid "30-60 dakika süren uygulama. İnce kanüller ile iplikler cilt altına yerleştirilir."
+msgstr "30-60 Min. Fäden unter die Haut mit feinen Kanülen."
+
+msgid "Hafif ödem ve morarmalar normaldir. Anında germe etkisi görülür ve günlük hayata dönülür."
+msgstr "Leichte Schwellung/Bluterguss normal. Sofortiger Lifting-Effekt."
+
+msgid "İyileşme ve Kolajen Üretimi"
+msgstr "Heilung und Kollagenbildung"
+
+msgid "2-4 hafta içinde kolajen üretimi artar. Final etki 2-3 ayda tam olarak görülür."
+msgstr "Kollagenbildung steigt in 2-4 Wochen. Volle Wirkung in 2-3 Monaten."
+
+msgid "Etki 12-18 ay sürer. İplikler tamamen emilir, kolajen etkisi devam eder."
+msgstr "Wirkung 12-18 Monate. Fäden werden resorbiert, Kollageneffekt bleibt."
+
+msgid "Neden Fransız Askısı?"
+msgstr "Warum French Lift?"
+
+msgid "Fransız askısı ameliyatsız yüz germenin en etkili yöntemidir. Hem anında germe hem de uzun süreli kolajen üretimi sağlar."
+msgstr "French Lift ist effektives Fadenlifting ohne OP. Sofortiger Effekt und langanhaltende Kollagenbildung."
+
+msgid "Anında Germe"
+msgstr "Sofortiges Lifting"
+
+msgid "Uygulama sonrası hemen lifting etkisi"
+msgstr "Lifting-Effekt direkt nach der Anwendung"
+
+msgid "Doğal Sonuç"
+msgstr "Natürliches Ergebnis"
+
+msgid "Abartısız, doğal germe etkisi"
+msgstr "Unaufdringliches, natürliches Lifting"
+
+msgid "Kolajen Üretimi"
+msgstr "Kollagenbildung"
+
+msgid "Uzun süreli cilt yenilenmesi"
+msgstr "Langanhaltende Hauterneuerung"
+
+msgid "Güvenli Materyal"
+msgstr "Sicheres Material"
+
+msgid "Emilir PDO iplikler, minimal risk"
+msgstr "Resorbierbare PDO-Fäden, minimales Risiko"
+
+msgid "Fransız askısı hakkında merak ettikleriniz"
+msgstr "Wissenswertes zum French Lift"
+
+msgid "Fransız askısı ağrılı mıdır?"
+msgstr "Ist der French Lift schmerzhaft?"
+
+msgid "İşlem lokal anestezi altında yapılır, bu nedenle ağrı hissedilmez. Uygulama sonrası hafif gerginlik hissi olabilir ancak ağrı kesici gerektirecek kadar ağrılı değildir."
+msgstr "Unter Lokalanästhesie keine Schmerzen. Leichte Spannung danach, keine Schmerzmittel nötig."
+
+msgid "Fransız askısı etkisi ne kadar sürer?"
+msgstr "Wie lange hält der French Lift?"
+
+msgid "İplik etkisi 12-18 ay sürer. İplikler tamamen emildikten sonra bile, uyardığı kolajen üretimi sayesinde cilt kalitesi uzun süre korunur."
+msgstr "Fadeneffekt 12-18 Monate. Kollagenbildung erhält die Hautqualität länger."
+
+msgid "PDO iplikler güvenli midir?"
+msgstr "Sind PDO-Fäden sicher?"
+
+msgid "PDO iplikler uzun yıllardır cerrahide kullanılan güvenli materyallerdir ve vücut tarafından emilir."
+msgstr "PDO-Fäden sind sichere, in der Chirurgie bewährte Materialien und werden vom Körper abgebaut."
+
+msgid "İşlem sonrası ne zaman normale dönerim?"
+msgstr "Wann bin ich nach dem Eingriff wieder normal?"
+
+msgid "Ertesi gün normal hayatınıza dönebilirsiniz; sadece birkaç gün ağır mimikten ve bir hafta ağır spordan kaçınmanız önerilir."
+msgstr "Am nächsten Tag wieder Alltag. Einige Tage starke Mimik meiden, 1 Woche keinen intensiven Sport."
+
+msgid "Hangi yaşta fransız askısı yapılabilir?"
+msgstr "In welchem Alter ist der French Lift möglich?"
+
+msgid "Genellikle 30 yaş üzeri hastalarda uygundur; esas belirleyici olan cilt sarkma derecesi ve beklentilerdir."
+msgstr "Üblicherweise ab 30. Entscheidend sind Erschlaffungsgrad und Erwartungen."
+
+msgid "Fransız askısı ile ilgili tüm sorularınızı yanıtlayalım"
+msgstr "Wir beantworten alle Ihre Fragen zum French Lift"
+
+msgid "Klinik ortamımızdan kareler ve tedavi süreçlerimizden seçkiler"
+msgstr "Einblicke in unsere Klinik und Behandlungen"
+
+msgid "Fotoğraf Galerisi"
+msgstr "Fotogalerie"
+
+msgid "Kliniğimiz, uygulamalar ve ön/sonra çekimlerden kareler"
+msgstr "Klinik, Behandlungen und Vorher/Nachher"
+
+msgid "Klinikten Bir Kare"
+msgstr "Aus unserer Klinik"
+
+msgid "Modern ve konforlu klinik ortamımız."
+msgstr "Moderne, angenehme Klinikumgebung."
+
+msgid "Hasta Karşılama"
+msgstr "Patientenempfang"
+
+msgid "Profesyonel ekibimizle güler yüzlü karşılama."
+msgstr "Herzlicher Empfang durch unser Team."
+
+msgid "Uygulama Anı"
+msgstr "Während der Behandlung"
+
+msgid "Hijyenik ve güvenli uygulama süreçleri."
+msgstr "Hygienische, sichere Abläufe."
+
+msgid "Burun estetiği alanından örnek bir görsel."
+msgstr "Beispiel aus der Nasenchirurgie."
+
+msgid "Şekillendirme ve simetri odaklı yaklaşım."
+msgstr "Form und Symmetrie im Fokus."
+
+msgid "Doğal ve dengeli yüz hatları için çözümler."
+msgstr "Lösungen für natürliche, ausgewogene Gesichtszüge."
+
+msgid "Şekillendirme ve incelme uygulamalarımız."
+msgstr "Konturierung und Straffung."
+
+msgid "Mimik çizgilerine etkili çözümler."
+msgstr "Wirksame Behandlung von Mimikfalten."
+
+msgid "Hacim ve kontur için güvenli dolgular."
+msgstr "Sichere Filler für Volumen und Kontur."
+
+msgid "Sertifikalar"
+msgstr "Zertifikate"
+
+msgid "Mesleki yetkinliklerimi belgeleyen seçili sertifikalar ve üyelikler"
+msgstr "Ausgewählte Zertifikate und Mitgliedschaften"
+
+msgid "Türk Plastik Cerrahi Derneği Üyesi"
+msgstr "Mitglied der Türkischen Gesellschaft für Plastische Chirurgie"
+
+msgid "Tam üyelik"
+msgstr "Vollmitgliedschaft"
+
+msgid "Üyelik"
+msgstr "Mitgliedschaft"
+
+msgid "Botoks ve Dermal Dolgu Uygulamaları"
+msgstr "Botox- und Filler-Anwendungen"
+
+msgid "Yetkinlik sertifikası"
+msgstr "Kompetenzzertifikat"
+
+msgid "Detaylı Bilgi ve Randevu"
+msgstr "Ausführliche Information und Termin"
+
+msgid "Uygulamalarımız hakkında bilgi almak için bizimle iletişime geçin."
+msgstr "Kontaktieren Sie uns für Informationen zu unseren Behandlungen."
+
+msgid "Sertifikalar ve Üyelikler"
+msgstr "Zertifikate und Mitgliedschaften"

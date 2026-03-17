@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+
+{% block title %}{% trans "PRP Tedavisi" %} - Op. Dr. Mustafa Öksüz{% endblock %}
+
+{% block content %}
+<div class="page-service">
+
+    <!-- HERO SECTION -->
+    <section class="service-hero-premium">
+        <div class="container position-relative" style="z-index:2;">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <nav aria-label="breadcrumb" class="mb-3">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item"><a href="{% url 'home' %}">{% trans "Anasayfa" %}</a></li>
+                            <li class="breadcrumb-item"><span>{% trans "Ameliyatsız Estetik" %}</span></li>
+                            <li class="breadcrumb-item active" aria-current="page">{% trans "PRP" %}</li>
+                        </ol>
+                    </nav>
+                    <div class="hero-badge"><i class="fas fa-certificate"></i> {% trans "Ameliyatsız Estetik" %}</div>
+                    <h1 class="hero-title">{% trans "Doğal Gençleşme," %}<br><span class="accent">{% trans "PRP" %}</span> {% trans "ile Mümkün" %}</h1>
+                    <p class="hero-subtitle">{% trans "Kendi kanınızdan elde edilen trombositlerle cilt yenileme. Tamamen doğal ve güvenli." %}</p>
+                    <div class="hero-cta-group">
+                        <a href="#consultation" class="hero-cta-primary"><i class="fas fa-calendar-alt"></i> {% trans "Ücretsiz Konsültasyon" %}</a>
+                        <a href="#process" class="hero-cta-secondary"><i class="fas fa-play-circle"></i> {% trans "Süreci İnceleyin" %}</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-visual">
+                    <div class="hero-image-wrapper">
+                        <img src="{{ site_images.prp_hero }}" alt="{% trans 'PRP Tedavisi - Op. Dr. Mustafa Öksüz' %}">
+                        <div class="hero-image-badge">
+                            <div class="badge-icon"><i class="fas fa-heart"></i></div>
+                            <div class="badge-text">
+                                <strong>{% trans "%100 Doğal" %}</strong>
+                                <span>{% trans "Kendi Kanınız" %}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK STATS STRIP -->
+    <section class="stats-strip">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6"><div class="stats-card"><div class="stats-icon icon-time"><i class="fas fa-clock"></i></div><div class="stats-value">45-60 {% trans "Dakika" %}</div><p class="stats-label">{% trans "Uygulama Süresi" %}</p></div></div>
+                <div class="col-lg-3 col-md-6"><div class="stats-card"><div class="stats-icon icon-hospital"><i class="fas fa-home"></i></div><div class="stats-value">{% trans "Hastanede Kalış Yok" %}</div><p class="stats-label">{% trans "Hemen Eve Dönüş" %}</p></div></div>
+                <div class="col-lg-3 col-md-6"><div class="stats-card"><div class="stats-icon icon-needle"><i class="fas fa-syringe"></i></div><div class="stats-value">{% trans "Topikal Krem" %}</div><p class="stats-label">{% trans "Anestezi Türü" %}</p></div></div>
+                <div class="col-lg-3 col-md-6"><div class="stats-card"><div class="stats-icon icon-calendar"><i class="fas fa-calendar-check"></i></div><div class="stats-value">3-4 {% trans "Seans" %}</div><p class="stats-label">{% trans "Seans Sayısı" %}</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT PRP -->
+    <section id="about-prp" class="about-service">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="section-label">{% trans "PRP Tedavisi Nedir?" %}</div>
+                    <h2 class="about-title">{% trans "Kendi Kanınızla" %}<br>{% trans "Doğal Gençleşme" %}</h2>
+                    <p class="about-description">{{ page_content.about_lead }}</p>
+                    <p class="about-description">{{ page_content.about_paragraph }}</p>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <h6 class="fw-bold text-dark mb-3"><i class="fas fa-crosshairs me-2" style="color:var(--color-primary);"></i>{% trans "Uygulama Alanları" %}</h6>
+                            <ul class="check-list">
+                                <li><i class="fas fa-check"></i> {% trans "Yüz gençleştirme" %}</li>
+                                <li><i class="fas fa-check"></i> {% trans "Boyun ve dekolte" %}</li>
+                                <li><i class="fas fa-check"></i> {% trans "El sırtı" %}</li>
+                                <li><i class="fas fa-check"></i> {% trans "Saç dökülmesi tedavisi" %}</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <h6 class="fw-bold text-dark mb-3"><i class="fas fa-star me-2" style="color:var(--color-primary);"></i>{% trans "PRP'nin Faydaları" %}</h6>
+                            <ul class="check-list">
+                                <li><i class="fas fa-check"></i> {% trans "Kolajen üretimi artışı" %}</li>
+                                <li><i class="fas fa-check"></i> {% trans "Cilt elastikiyeti iyileşmesi" %}</li>
+                                <li><i class="fas fa-check"></i> {% trans "İnce çizgilerin azalması" %}</li>
+                                <li><i class="fas fa-check"></i> {% trans "Cilt tonunun düzelmesi" %}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="about-image-wrapper">
+                        <img src="{{ site_images.prp_card }}" alt="{% trans 'PRP Uygulama Süreci' %}" class="shadow-lg">
+                        <div class="about-floating-card">
+                            <div class="float-icon"><i class="fas fa-award"></i></div>
+                            <div class="float-text">
+                                <strong>{% trans "Doğal Tedavi" %}</strong>
+                                <span>{% trans "Kendi kanınızdan" %}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS TIMELINE -->
+    <section id="process" class="process-section">
+        <div class="container">
+            <div class="text-center mb-4">
+                <div class="section-label justify-content-center" style="display:flex;">{% trans "Adım Adım" %}</div>
+                <h2 class="section-title">{% trans "PRP Uygulama Süreci" %}</h2>
+                <p class="text-muted mt-2">{% trans "Kan alımından cilt uygulamasına kadar" %}</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item"><div class="timeline-dot">1</div><div class="timeline-content"><h5>{% trans "Detaylı Konsültasyon" %}</h5><p>{{ page_content.process_step_1_desc }}</p></div></div>
+                <div class="timeline-item"><div class="timeline-dot">2</div><div class="timeline-content"><h5>{% trans "Kan Alımı" %}</h5><p>{{ page_content.process_step_2_desc }}</p></div></div>
+                <div class="timeline-item"><div class="timeline-dot">3</div><div class="timeline-content"><h5>{% trans "Santrifüj İşlemi" %}</h5><p>{{ page_content.process_step_3_desc }}</p></div></div>
+                <div class="timeline-item"><div class="timeline-dot">4</div><div class="timeline-content"><h5>{% trans "Cilt Hazırlığı" %}</h5><p>{{ page_content.process_step_4_desc }}</p></div></div>
+                <div class="timeline-item"><div class="timeline-dot">5</div><div class="timeline-content"><h5>{% trans "PRP Enjeksiyonu" %}</h5><p>{{ page_content.process_step_5_desc }}</p></div></div>
+                <div class="timeline-item"><div class="timeline-dot">6</div><div class="timeline-content"><h5>{% trans "İyileşme ve Takip" %}</h5><p>{{ page_content.process_step_6_desc }}</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFITS SECTION -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="text-center mb-4">
+                <div class="section-label justify-content-center" style="display:flex;">{% trans "Avantajlar" %}</div>
+                <h2 class="section-title">{% trans "Neden PRP Tedavisi?" %}</h2>
+                <p class="text-muted mt-2">{{ page_content.benefits_lead }}</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6"><div class="benefit-card"><div class="benefit-icon icon-1"><i class="fas fa-heart"></i></div><h5>{% trans "%100 Doğal" %}</h5><p>{{ page_content.benefit_1_desc }}</p></div></div>
+                <div class="col-lg-3 col-md-6"><div class="benefit-card"><div class="benefit-icon icon-2"><i class="fas fa-dna"></i></div><h5>{% trans "Büyüme Faktörleri" %}</h5><p>{{ page_content.benefit_2_desc }}</p></div></div>
+                <div class="col-lg-3 col-md-6"><div class="benefit-card"><div class="benefit-icon icon-3"><i class="fas fa-shield-alt"></i></div><h5>{% trans "Güvenli Tedavi" %}</h5><p>{{ page_content.benefit_3_desc }}</p></div></div>
+                <div class="col-lg-3 col-md-6"><div class="benefit-card"><div class="benefit-icon icon-4"><i class="fas fa-leaf"></i></div><h5>{% trans "Uzun Süreli Etki" %}</h5><p>{{ page_content.benefit_4_desc }}</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="text-center mb-4">
+                <div class="section-label justify-content-center" style="display:flex;">{% trans "SSS" %}</div>
+                <h2 class="section-title">{% trans "Sık Sorulan Sorular" %}</h2>
+                <p class="text-muted mt-2">{% trans "PRP tedavisi hakkında merak ettikleriniz" %}</p>
+            </div>
+            <div class="row"><div class="col-lg-8 mx-auto">
+                <div class="accordion faq-custom" id="faqAccordion">
+                    <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1"><i class="fas fa-question-circle me-3" style="opacity:0.6;"></i>{{ page_content.faq_1_q }}</button></h2><div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">{{ page_content.faq_1_a }}</div></div></div>
+                    <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2"><i class="fas fa-question-circle me-3" style="opacity:0.6;"></i>{{ page_content.faq_2_q }}</button></h2><div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">{{ page_content.faq_2_a }}</div></div></div>
+                    <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3"><i class="fas fa-question-circle me-3" style="opacity:0.6;"></i>{{ page_content.faq_3_q }}</button></h2><div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">{{ page_content.faq_3_a }}</div></div></div>
+                    <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4"><i class="fas fa-question-circle me-3" style="opacity:0.6;"></i>{{ page_content.faq_4_q }}</button></h2><div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">{{ page_content.faq_4_a }}</div></div></div>
+                    <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5"><i class="fas fa-question-circle me-3" style="opacity:0.6;"></i>{{ page_content.faq_5_q }}</button></h2><div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">{{ page_content.faq_5_a }}</div></div></div>
+                </div>
+            </div></div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section id="consultation" class="cta-section">
+        <div class="container position-relative" style="z-index:2;">
+            <div class="text-center">
+                <h2 class="cta-title">{% trans "Ücretsiz Konsültasyon Alın" %}</h2>
+                <p class="cta-subtitle">{{ page_content.cta_section_lead }}</p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="https://wa.me/{{ site_settings.whatsapp }}" class="cta-btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="tel:{{ site_settings.phone|cut:' ' }}" class="cta-btn-phone"><i class="fas fa-phone"></i> {% trans "Hemen Ara" %}</a>
+                    <a href="{% url 'contact' %}#contact-form" class="cta-btn-randevu"><i class="fas fa-calendar-alt"></i> {% trans "Randevu Al" %}</a>
+                </div>
+                <div class="cta-trust"><i class="fas fa-shield-alt"></i> {{ page_content.cta_disclaimer }}</div>
+            </div>
+        </div>
+    </section>
+
+</div>
+{% endblock %}

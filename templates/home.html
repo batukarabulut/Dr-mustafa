@@ -1,0 +1,639 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+
+{% block title %}Op. Dr. Mustafa Öksüz - Plastik ve Rekonstrüktif Cerrahi{% endblock %}
+
+{% block content %}
+<div class="page-service">
+    <!-- Hero Slider -->
+    <section class="service-hero-premium hero-slider-section" style="min-height:85vh;">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+            <div class="carousel-inner">
+                <!-- Slide 1: Genel -->
+                <div class="carousel-item active">
+                    <div class="container position-relative" style="z-index:2;">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <h1 class="hero-title">{% trans "Güzelliğinizi" %} <span class="accent">{% trans "Doğal" %}</span> {% trans "Şekilde Ortaya Çıkarın" %}</h1>
+                                <p class="hero-subtitle">{{ page_content.hero_lead }}</p>
+                                <div class="hero-cta-group">
+                                    <a href="#contact" class="hero-cta-primary"><i class="fas fa-calendar-alt"></i> {% trans "Randevu Al" %}</a>
+                                    <a href="#services" class="hero-cta-secondary"><i class="fas fa-info-circle"></i> {% trans "Hizmetlerimiz" %}</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 hero-visual">
+                                <div class="hero-image-wrapper">
+                                    <img src="{{ site_images.hero_slide_1 }}" alt="Op. Dr. Mustafa Öksüz">
+                                    <div class="hero-image-badge">
+                                        <div class="badge-icon"><i class="fas fa-award"></i></div>
+                                        <div class="badge-text"><strong>15+ {% trans "Yıl Deneyim" %}</strong><span>{% trans "Uzman Cerrahi" %}</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2: Rinoplasti -->
+                <div class="carousel-item">
+                    <div class="container position-relative" style="z-index:2;">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="hero-slide-label"><i class="fas fa-star me-2"></i>{% trans "Cerrahi Estetik" %}</div>
+                                <h1 class="hero-title">{% trans "Rinoplasti" %}</h1>
+                                <p class="hero-subtitle">{% trans "Yüzünüzle uyumlu, doğal görünümlü burun estetiği. Uzman ellerde güvenli ameliyat." %}</p>
+                                <div class="hero-cta-group">
+                                    <a href="{% url 'rinoplasti' %}" class="hero-cta-primary"><i class="fas fa-arrow-right"></i> {% trans "Detaylı Bilgi" %}</a>
+                                    <a href="#contact" class="hero-cta-secondary"><i class="fas fa-calendar-alt"></i> {% trans "Randevu Al" %}</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 hero-visual">
+                                <div class="hero-image-wrapper">
+                                    <img src="{{ site_images.rinoplasti_card }}" alt="{% trans 'Rinoplasti' %}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3: Meme Estetiği -->
+                <div class="carousel-item">
+                    <div class="container position-relative" style="z-index:2;">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="hero-slide-label"><i class="fas fa-star me-2"></i>{% trans "Cerrahi Estetik" %}</div>
+                                <h1 class="hero-title">{% trans "Meme Estetiği" %}</h1>
+                                <p class="hero-subtitle">{% trans "Vücut yapınıza uygun, doğal ve estetik sonuçlar. Büyütme, küçültme ve dikleştirme." %}</p>
+                                <div class="hero-cta-group">
+                                    <a href="{% url 'meme_estetigi' %}" class="hero-cta-primary"><i class="fas fa-arrow-right"></i> {% trans "Detaylı Bilgi" %}</a>
+                                    <a href="#contact" class="hero-cta-secondary"><i class="fas fa-calendar-alt"></i> {% trans "Randevu Al" %}</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 hero-visual">
+                                <div class="hero-image-wrapper">
+                                    <img src="{{ site_images.meme_estetigi_card }}" alt="{% trans 'Meme Estetiği' %}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 4: Botoks -->
+                <div class="carousel-item">
+                    <div class="container position-relative" style="z-index:2;">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="hero-slide-label"><i class="fas fa-syringe me-2"></i>{% trans "Ameliyatsız Estetik" %}</div>
+                                <h1 class="hero-title">{% trans "Botoks" %}</h1>
+                                <p class="hero-subtitle">{% trans "Kırışıklık giderme ve yüz gençleştirme. 15 dakikada doğal ve genç görünüm." %}</p>
+                                <div class="hero-cta-group">
+                                    <a href="{% url 'botoks' %}" class="hero-cta-primary"><i class="fas fa-arrow-right"></i> {% trans "Detaylı Bilgi" %}</a>
+                                    <a href="#contact" class="hero-cta-secondary"><i class="fas fa-calendar-alt"></i> {% trans "Randevu Al" %}</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 hero-visual">
+                                <div class="hero-image-wrapper">
+                                    <img src="{{ site_images.botoks_card }}" alt="{% trans 'Botoks' %}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slider navigation: < ● ● ● ● > -->
+            <div class="hero-nav-bar">
+                <button class="hero-nav-btn" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="{% trans 'Önceki' %}">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="hero-nav-dots">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <button class="hero-nav-btn" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="{% trans 'Sonraki' %}">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <div class="section-label justify-content-center" style="display:flex;">{% trans "Hakkımda" %}</div>
+                    <h2 class="section-title about-title">{% trans "Hakkımda" %}</h2>
+                    <p class="text-muted">Plastik ve Rekonstrüktif Cerrahi Uzmanı</p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="{{ site_images.about_card }}" alt="Hakkımda" class="img-fluid rounded-3 shadow">
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h3 class="mb-4">{{ site_settings.doctor_name }}</h3>
+                        <p class="mb-4">{{ page_content.about_lead }}</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                Tıp Fakültesi - Ege Üniversitesi
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                Plastik Cerrahi Uzmanlığı - Celal Bayar Üniversitesi
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                Türk Plastik Cerrahi Derneği Üyesi
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                15+ Yıl Plastik Cerrahi Deneyimi
+                            </li>
+                        </ul>
+                        <div class="mt-3">
+                            <a href="{% url 'about' %}" class="service-detail-btn">
+                                <span class="me-2">Beni Tanıyın</span><i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ana İstatistikler -->
+    <section id="highlights" class="py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6 mb-4 reveal-up">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="mb-2"><i class="fas fa-briefcase text-primary" style="font-size: 2rem;"></i></div>
+                            <h3 class="text-primary fw-bold"><span class="count-up" data-count="15" data-suffix="+" data-duration="1400">0</span></h3>
+                            <p class="text-muted mb-0">Yıl Deneyim</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 reveal-up">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="mb-2"><i class="fas fa-check-circle text-success" style="font-size: 2rem;"></i></div>
+                            <h3 class="text-primary fw-bold"><span class="count-up" data-count="1500" data-suffix="+" data-duration="1600">0</span></h3>
+                            <p class="text-muted mb-0">Başarılı Operasyon</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 reveal-up">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="mb-2"><i class="fas fa-list text-info" style="font-size: 2rem;"></i></div>
+                            <h3 class="text-primary fw-bold"><span class="count-up" data-count="10" data-suffix="+" data-duration="1500">0</span></h3>
+                            <p class="text-muted mb-0">Hizmet Alanı</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 reveal-up">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="mb-2"><i class="fas fa-star text-warning" style="font-size: 2rem;"></i></div>
+                            <h3 class="text-primary fw-bold">
+                                <span class="count-up" data-count="4.9" data-decimals="1" data-duration="1500">0</span>
+                                <small class="text-muted">/5</small>
+                            </h3>
+                            <p class="text-muted mb-0">Hasta Memnuniyeti</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <div class="section-label justify-content-center" style="display:flex;">{% trans "Hizmetlerimiz" %}</div>
+                    <h2 class="section-title">{% trans "Hizmetlerimiz" %}</h2>
+                    <p class="text-muted">En güncel teknikler ve teknolojiler ile size hizmet veriyoruz</p>
+                </div>
+            </div>
+
+            <!-- Services Slider -->
+            <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row g-4">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="service-image-card">
+                                    <div class="service-image-container">
+                                        <img src="{{ site_images.rinoplasti_card }}" alt="Rinoplasti" class="service-img">
+                                        <div class="service-overlay">
+                                            <div class="service-category">ESTETİK CERRAHİ</div>
+                                            <div class="service-plus-icon">
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="service-content">
+                                        <h5>Rinoplasti</h5>
+                                        <p class="text-muted mb-3">Burun estetiği ve fonksiyonel burun cerrahisi</p>
+                                        <a href="{% url 'rinoplasti' %}" class="service-detail-btn">
+                                            <i class="fas fa-arrow-right me-2"></i>Detaylar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <div class="service-image-card">
+                                    <div class="service-image-container">
+                                        <img src="{{ site_images.meme_estetigi_card }}" alt="Meme Estetiği"
+                                            class="service-img">
+                                        <div class="service-overlay">
+                                            <div class="service-category">ESTETİK CERRAHİ</div>
+                                            <div class="service-plus-icon">
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="service-content">
+                                        <h5>Meme Estetiği</h5>
+                                        <p class="text-muted mb-3">Meme büyütme, küçültme ve şekillendirme</p>
+                                        <a href="{% url 'meme_estetigi' %}" class="service-detail-btn">
+                                            <i class="fas fa-arrow-right me-2"></i>Detaylar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <div class="service-image-card">
+                                    <div class="service-image-container">
+                                        <img src="{{ site_images.yuz_estetigi_card }}" alt="Yüz Estetiği"
+                                            class="service-img">
+                                        <div class="service-overlay">
+                                            <div class="service-category">ESTETİK CERRAHİ</div>
+                                            <div class="service-plus-icon">
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="service-content">
+                                        <h5>Yüz Estetiği</h5>
+                                        <p class="text-muted mb-3">Yüz germe, göz kapağı ve alın estetiği</p>
+                                        <a href="{% url 'yuz_estetigi' %}" class="service-detail-btn">
+                                            <i class="fas fa-arrow-right me-2"></i>Detaylar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <div class="service-image-card">
+                                    <div class="service-image-container">
+                                        <img src="{{ site_images.vucut_estetigi_card }}" alt="Vücut Estetiği"
+                                            class="service-img">
+                                        <div class="service-overlay">
+                                            <div class="service-category">ESTETİK CERRAHİ</div>
+                                            <div class="service-plus-icon">
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="service-content">
+                                        <h5>Vücut Estetiği</h5>
+                                        <p class="text-muted mb-3">Liposuction, karın germe ve vücut şekillendirme</p>
+                                        <a href="{% url 'vucut_estetigi' %}" class="service-detail-btn">
+                                            <i class="fas fa-arrow-right me-2"></i>Detaylar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 - Ameliyatsız Estetik -->
+                    <div class="carousel-item">
+                        <div class="row g-4">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="service-image-card">
+                                    <div class="service-image-container">
+                                        <img src="{{ site_images.botoks_card }}" alt="Botoks" class="service-img">
+                                        <div class="service-overlay">
+                                            <div class="service-category">AMELİYATSIZ ESTETİK</div>
+                                            <div class="service-plus-icon">
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="service-content">
+                                        <h5>Botoks</h5>
+                                        <p class="text-muted mb-3">Kırışıklık giderme ve yüz gençleştirme</p>
+                                        <a href="{% url 'botoks' %}" class="service-detail-btn">
+                                            <i class="fas fa-arrow-right me-2"></i>Detaylar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <div class="service-image-card">
+                                    <div class="service-image-container">
+                                        <img src="{{ site_images.dolgu_card }}" alt="Dolgu" class="service-img">
+                                        <div class="service-overlay">
+                                            <div class="service-category">AMELİYATSIZ ESTETİK</div>
+                                            <div class="service-plus-icon">
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="service-content">
+                                        <h5>Dolgu Uygulamaları</h5>
+                                        <p class="text-muted mb-3">Dudak, yanak ve çene dolgusu</p>
+                                        <a href="{% url 'dolgu' %}" class="service-detail-btn">
+                                            <i class="fas fa-arrow-right me-2"></i>Detaylar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <div class="service-image-card">
+                                    <div class="service-image-container">
+                                        <img src="{{ site_images.prp_card }}" alt="PRP" class="service-img">
+                                        <div class="service-overlay">
+                                            <div class="service-category">AMELİYATSIZ ESTETİK</div>
+                                            <div class="service-plus-icon">
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="service-content">
+                                        <h5>PRP Tedavisi</h5>
+                                        <p class="text-muted mb-3">Platelet Rich Plasma ile cilt yenileme</p>
+                                        <a href="{% url 'prp' %}" class="service-detail-btn">
+                                            <i class="fas fa-arrow-right me-2"></i>Detaylar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <div class="service-image-card">
+                                    <div class="service-image-container">
+                                        <img src="{{ site_images.mezoterapi_card }}" alt="Mezoterapi"
+                                            class="service-img">
+                                        <div class="service-overlay">
+                                            <div class="service-category">AMELİYATSIZ ESTETİK</div>
+                                            <div class="service-plus-icon">
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="service-content">
+                                        <h5>Mezoterapi</h5>
+                                        <p class="text-muted mb-3">Vitamin ve mineral desteği ile cilt bakımı</p>
+                                        <a href="{% url 'mezoterapi' %}" class="service-detail-btn">
+                                            <i class="fas fa-arrow-right me-2"></i>Detaylar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Önceki</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Sonraki</span>
+                </button>
+
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="0"
+                        class="active"></button>
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="1"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <div class="section-label justify-content-center" style="display:flex;">{% trans "Ekibimiz" %}</div>
+                    <h2 class="section-title">{% trans "Ekibimiz" %}</h2>
+                    <p class="text-muted">Deneyimli hemşire ve asistan ekibimizle yanınızdayız</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-card text-center">
+                        <img class="team-photo" src="https://ui-avatars.com/api/?name=Ayse+Yilmaz&background=2c3e50&color=fff&size=256" alt="Hemşire Ayşe Yılmaz">
+                        <h5 class="mt-3 mb-1">Hemşire Ayşe Yılmaz</h5>
+                        <p class="team-role">Klinik Hemşiresi</p>
+                        <p class="text-muted small">Ameliyat öncesi hazırlık ve ameliyat sonrası bakım süreçlerinde hastalarımıza eşlik eder.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-card text-center">
+                        <img class="team-photo" src="https://ui-avatars.com/api/?name=Zeynep+Demir&background=2c3e50&color=fff&size=256" alt="Hemşire Zeynep Demir">
+                        <h5 class="mt-3 mb-1">Hemşire Zeynep Demir</h5>
+                        <p class="team-role">Klinik Hemşiresi</p>
+                        <p class="text-muted small">Tedavi planlaması, yara bakımı ve kontrol randevularında destek sağlar.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-card text-center">
+                        <img class="team-photo" src="https://ui-avatars.com/api/?name=Mehmet+Kaya&background=2c3e50&color=fff&size=256" alt="Asistan Mehmet Kaya">
+                        <h5 class="mt-3 mb-1">Asistan Mehmet Kaya</h5>
+                        <p class="team-role">Cerrahi Asistan</p>
+                        <p class="text-muted small">Operasyon süreçlerinin koordinasyonu ve hasta bilgilendirmesinden sorumludur.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-card text-center">
+                        <img class="team-photo" src="https://ui-avatars.com/api/?name=Ebru+Sahin&background=2c3e50&color=fff&size=256" alt="Asistan Ebru Şahin">
+                        <h5 class="mt-3 mb-1">Asistan Ebru Şahin</h5>
+                        <p class="team-role">Hasta İlişkileri</p>
+                        <p class="text-muted small">Randevu, bilgilendirme ve hasta memnuniyeti süreçlerini yönetir.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <div class="section-label justify-content-center" style="display:flex;">{% trans "İletişim" %}</div>
+                    <h2 class="section-title">{% trans "İletişim" %}</h2>
+                    <p class="text-muted">{% trans "Randevu almak için bizimle iletişime geçin" %}</p>
+                </div>
+            </div>
+
+            <!-- Quick Contact Cards -->
+            <div class="row text-center mb-5">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100 contact-card">
+                        <div class="card-body p-4">
+                            <i class="fas fa-phone text-primary mb-3" style="font-size: 2.5rem;"></i>
+                            <h5>{% trans "Telefon" %}</h5>
+                            <p class="text-muted mb-3">+90 540 740 40 77</p>
+                            <a href="tel:+905407404077" class="btn btn-outline-primary btn-sm">{% trans "Hemen Ara" %}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100 contact-card">
+                        <div class="card-body p-4">
+                            <i class="fab fa-whatsapp text-success mb-3" style="font-size: 2.5rem;"></i>
+                            <h5>WhatsApp</h5>
+                            <p class="text-muted mb-3">{% trans "7/24 Mesaj" %}</p>
+                            <a href="https://wa.me/905407404077" class="btn btn-outline-success btn-sm">{% trans "Mesaj Gönder" %}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100 contact-card">
+                        <div class="card-body p-4">
+                            <i class="fas fa-envelope text-warning mb-3" style="font-size: 2.5rem;"></i>
+                            <h5>{% trans "E-posta" %}</h5>
+                            <p class="text-muted mb-3">drmustafaoksuz@gmail.com</p>
+                            <a href="mailto:drmustafaoksuz@gmail.com" class="btn btn-outline-warning btn-sm">{% trans "E-posta Gönder" %}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100 contact-card">
+                        <div class="card-body p-4">
+                            <i class="fab fa-instagram text-danger mb-3" style="font-size: 2.5rem;"></i>
+                            <h5>Instagram</h5>
+                            <p class="text-muted mb-3">@plasticsurgeon.mustafaoksuz</p>
+                            <a href="{{ site_settings.instagram_url }}"
+                                class="btn btn-outline-danger btn-sm">{% trans "Takip Et" %}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Contact Form (İletişim sayfası ile aynı alanlar) -->
+                <div class="col-lg-8 mx-auto">
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-header bg-primary text-white text-center py-4">
+                            <h4 class="mb-0">
+                                <i class="fas fa-paper-plane me-2"></i>{% trans "İletişim Formu" %}
+                            </h4>
+                        </div>
+                        <div class="card-body p-5">
+                            {% if success %}
+                                <div class="alert alert-success" role="alert">
+                                    {% trans "Mesajınız başarıyla iletildi. En kısa sürede size dönüş yapacağız." %}
+                                </div>
+                            {% endif %}
+                            {% if form.errors %}
+                                <div class="alert alert-danger" role="alert">
+                                    {% trans "Lütfen formu kontrol edin. Zorunlu alanları doldurduğunuzdan ve KVKK onayını işaretlediğinizden emin olun." %}
+                                </div>
+                            {% endif %}
+                            <form method="post" action="{% url 'home' %}#contact" id="home-contact-form" novalidate>
+                                {% csrf_token %}
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <label for="id_name" class="form-label fw-bold">
+                                            <i class="fas fa-user me-2 text-primary"></i>{% trans "Ad Soyad" %} *
+                                        </label>
+                                        <input type="text" class="form-control form-control-lg" name="name" id="id_name"
+                                               value="{{ form.name.value|default_if_none:'' }}" required>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <label for="id_email" class="form-label fw-bold">
+                                            <i class="fas fa-envelope me-2 text-primary"></i>{% trans "E-posta" %} *
+                                        </label>
+                                        <input type="email" class="form-control form-control-lg" name="email" id="id_email"
+                                               value="{{ form.email.value|default_if_none:'' }}" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <label for="id_phone" class="form-label fw-bold">
+                                            <i class="fas fa-phone me-2 text-primary"></i>{% trans "Telefon" %} *
+                                        </label>
+                                        <input type="tel" class="form-control form-control-lg" name="phone" id="id_phone"
+                                               value="{{ form.phone.value|default_if_none:'' }}" required>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <label for="id_subject" class="form-label fw-bold">
+                                            <i class="fas fa-tag me-2 text-primary"></i>{% trans "Konu" %}
+                                        </label>
+                                        <input type="text" class="form-control form-control-lg" name="subject" id="id_subject"
+                                               value="{{ form.subject.value|default_if_none:'' }}"
+                                               placeholder="{% trans 'Hangi konuda bilgi almak istiyorsunuz?' %}">
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="id_message" class="form-label fw-bold">
+                                        <i class="fas fa-comment me-2 text-primary"></i>{% trans "Mesajınız" %} *
+                                    </label>
+                                    <textarea class="form-control form-control-lg" name="message" id="id_message" rows="6"
+                                              placeholder="{% trans 'Mesajınızı buraya yazın...' %}" required>{{ form.message.value|default_if_none:'' }}</textarea>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="kvkk" id="id_kvkk"
+                                               {% if form.kvkk.value %}checked{% endif %} required>
+                                        <label class="form-check-label" for="id_kvkk">
+                                            <small>{% trans "KVKK Aydınlatma Metni'ni okudum ve kabul ediyorum. Kişisel verilerimin işlenmesine onay veriyorum." %}</small>
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg w-100 py-3">
+                                    <span class="btn-text" style="color: white !important;">
+                                        <i class="fas fa-paper-plane me-2"></i>{% trans "Mesaj Gönder" %}
+                                    </span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+(function(){
+    var el = document.getElementById('heroCarousel');
+    if (!el) return;
+    var dots = el.querySelectorAll('.hero-nav-dots button[data-bs-slide-to]');
+    el.addEventListener('slid.bs.carousel', function(e){
+        dots.forEach(function(d){ d.classList.remove('active'); });
+        var idx = e.to;
+        if (dots[idx]) dots[idx].classList.add('active');
+    });
+    var carousel = new bootstrap.Carousel(el, { interval: 6000, ride: 'carousel', pause: 'hover' });
+    carousel.cycle();
+})();
+</script>
+{% endblock %}
